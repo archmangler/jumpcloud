@@ -1,0 +1,998 @@
+2018-05-14 02:56:22,457 p=7248 u=gmonkey |  ansible-playbook 2.4.0.0
+  config file = /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg
+  configured module search path = [u'/home/gmonkey/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /home/gmonkey/.local/lib/python2.7/site-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 2.7.12 (default, Dec  4 2017, 14:50:18) [GCC 5.4.0 20160609]
+2018-05-14 02:56:22,457 p=7248 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 02:56:22,495 p=7248 u=gmonkey |  [DEPRECATION WARNING]: ansible.utils.unicode.to_unicode is deprecated.  Use ansible.module_utils._text.to_text instead. This feature will be removed in version 2.4. 
+Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2018-05-14 02:56:22,496 p=7248 u=gmonkey |  ERROR! the role 'shrikeh.jumpcloud' was not found in /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles:/home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles:/home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible
+
+The error appears to have been in '/home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/jumpcloud.yml': line 4, column 8, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+     - { role: shrikeh.jumpcloud, jumpcloud_x_connect_key: '481166ac2953ce0bb0af124acf400a3a359d5657' }
+       ^ here
+
+2018-05-14 02:56:46,677 p=7276 u=gmonkey |  ansible-playbook 2.4.0.0
+  config file = /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg
+  configured module search path = [u'/home/gmonkey/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /home/gmonkey/.local/lib/python2.7/site-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 2.7.12 (default, Dec  4 2017, 14:50:18) [GCC 5.4.0 20160609]
+2018-05-14 02:56:46,678 p=7276 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 02:56:46,883 p=7276 u=gmonkey |  [DEPRECATION WARNING]: The use of 'include' for tasks has been deprecated. Use 'import_tasks' for static inclusions or 'include_tasks' for dynamic inclusions. This feature 
+will be removed in a future release. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2018-05-14 02:56:46,885 p=7276 u=gmonkey |  [DEPRECATION WARNING]: include is kept for backwards compatibility but usage is discouraged. The module documentation details page may explain more about this rationale.. This
+ feature will be removed in a future release. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2018-05-14 02:56:46,889 p=7276 u=gmonkey |  statically imported: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml
+2018-05-14 02:56:47,035 p=7276 u=gmonkey |  PLAYBOOK: jumpcloud.yml ********************************************************************************************************************************************************
+2018-05-14 02:56:47,036 p=7276 u=gmonkey |  1 plays in jumpcloud.yml
+2018-05-14 02:56:47,073 p=7276 u=gmonkey |  PLAY [jumpcloud-clients] *******************************************************************************************************************************************************
+2018-05-14 02:56:47,105 p=7276 u=gmonkey |  TASK [Gathering Facts] *********************************************************************************************************************************************************
+2018-05-14 02:56:48,805 p=7276 u=gmonkey |  fatal: [18.196.50.237]: FAILED! => {"changed": false, "failed": true, "module_stderr": "Shared connection to 18.196.50.237 closed.\r\n", "module_stdout": "/bin/sh: 1: /usr/bin/python: not found\r\n", "msg": "MODULE FAILURE", "rc": 0}
+2018-05-14 02:56:48,808 p=7276 u=gmonkey |  PLAY RECAP *********************************************************************************************************************************************************************
+2018-05-14 02:56:48,809 p=7276 u=gmonkey |  18.196.50.237              : ok=0    changed=0    unreachable=0    failed=1   
+2018-05-14 02:57:29,094 p=7295 u=gmonkey |  ansible-playbook 2.4.0.0
+  config file = /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg
+  configured module search path = [u'/home/gmonkey/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']
+  ansible python module location = /home/gmonkey/.local/lib/python2.7/site-packages/ansible
+  executable location = /usr/bin/ansible-playbook
+  python version = 2.7.12 (default, Dec  4 2017, 14:50:18) [GCC 5.4.0 20160609]
+2018-05-14 02:57:29,095 p=7295 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 02:57:29,215 p=7295 u=gmonkey |  [DEPRECATION WARNING]: The use of 'include' for tasks has been deprecated. Use 'import_tasks' for static inclusions or 'include_tasks' for dynamic inclusions. This feature 
+will be removed in a future release. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2018-05-14 02:57:29,216 p=7295 u=gmonkey |  [DEPRECATION WARNING]: include is kept for backwards compatibility but usage is discouraged. The module documentation details page may explain more about this rationale.. This
+ feature will be removed in a future release. Deprecation warnings can be disabled by setting deprecation_warnings=False in ansible.cfg.
+2018-05-14 02:57:29,220 p=7295 u=gmonkey |  statically imported: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml
+2018-05-14 02:57:29,303 p=7295 u=gmonkey |  PLAYBOOK: jumpcloud.yml ********************************************************************************************************************************************************
+2018-05-14 02:57:29,304 p=7295 u=gmonkey |  1 plays in jumpcloud.yml
+2018-05-14 02:57:29,323 p=7295 u=gmonkey |  PLAY [jumpcloud-clients] *******************************************************************************************************************************************************
+2018-05-14 02:57:29,336 p=7295 u=gmonkey |  TASK [Gathering Facts] *********************************************************************************************************************************************************
+2018-05-14 02:57:30,424 p=7295 u=gmonkey |  ok: [18.196.50.237]
+2018-05-14 02:57:30,425 p=7295 u=gmonkey |  META: ran handlers
+2018-05-14 02:57:30,431 p=7295 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************************************************************************************************************
+2018-05-14 02:57:30,432 p=7295 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:2
+2018-05-14 02:57:31,105 p=7295 u=gmonkey |  ok: [18.196.50.237] => {"changed": false, "failed": false, "stat": {"exists": false}}
+2018-05-14 02:57:31,115 p=7295 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********************************************************************************************************
+2018-05-14 02:57:31,116 p=7295 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:7
+2018-05-14 02:57:31,153 p=7295 u=gmonkey |  ok: [18.196.50.237] => {"ansible_facts": {"jc_not_installed": true}, "changed": false, "failed": false}
+2018-05-14 02:57:31,165 p=7295 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************************************************************************************************************
+2018-05-14 02:57:31,165 p=7295 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:2
+2018-05-14 02:57:31,513 p=7295 u=gmonkey |  skipping: [18.196.50.237] => {"changed": false, "failed": false, "msg": "remote module (uri) does not support check mode", "skipped": true}
+2018-05-14 02:57:31,521 p=7295 u=gmonkey |  TASK [shrikeh.jumpcloud : Register the install script output as a variable] ****************************************************************************************************
+2018-05-14 02:57:31,521 p=7295 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:12
+2018-05-14 02:57:31,549 p=7295 u=gmonkey |  fatal: [18.196.50.237]: FAILED! => {"failed": true, "msg": "The task includes an option with an undefined variable. The error was: 'dict object' has no attribute 'content'\n\nThe error appears to have been in '/home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml': line 12, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Register the install script output as a variable\n  ^ here\n\nexception type: <class 'ansible.errors.AnsibleUndefinedVariable'>\nexception: 'dict object' has no attribute 'content'"}
+2018-05-14 02:57:31,552 p=7295 u=gmonkey |  PLAY RECAP *********************************************************************************************************************************************************************
+2018-05-14 02:57:31,552 p=7295 u=gmonkey |  18.196.50.237              : ok=3    changed=0    unreachable=0    failed=1   
+2018-05-14 03:07:30,125 p=8449 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 03:07:30,195 p=8449 u=gmonkey |  [0;34m1 plays in jumpcloud.yml[0m
+2018-05-14 03:07:30,201 p=8449 u=gmonkey |  PLAY ***************************************************************************
+2018-05-14 03:07:30,219 p=8449 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 03:07:31,303 p=8449 u=gmonkey |  [0;32mok: [18.196.50.237][0m
+2018-05-14 03:07:31,306 p=8449 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 03:07:31,497 p=8449 u=gmonkey |  [0;32mok: [18.196.50.237] => {"changed": false, "stat": {"exists": false}}[0m
+2018-05-14 03:07:31,500 p=8449 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 03:07:31,545 p=8449 u=gmonkey |  [0;32mok: [18.196.50.237] => {"ansible_facts": {"jc_not_installed": true}, "changed": false}[0m
+2018-05-14 03:07:31,547 p=8449 u=gmonkey |  TASK [shrikeh.jumpcloud : Install JumpCloud if required] ***********************
+2018-05-14 03:07:31,597 p=8449 u=gmonkey |  [0;36mincluded: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml for 18.196.50.237[0m
+2018-05-14 03:07:31,612 p=8449 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 03:07:31,731 p=8449 u=gmonkey |  [0;36mskipping: [18.196.50.237] => {"changed": false, "msg": "remote module does not support check mode", "skipped": true}[0m
+2018-05-14 03:07:31,734 p=8449 u=gmonkey |  TASK [shrikeh.jumpcloud : Register the install script output as a variable] ****
+2018-05-14 03:07:31,777 p=8449 u=gmonkey |  [0;31mfatal: [18.196.50.237]: FAILED! => {"failed": true, "msg": "ERROR! 'dict object' has no attribute 'content'"}[0m
+2018-05-14 03:07:31,780 p=8449 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 03:07:31,780 p=8449 u=gmonkey |  18.196.50.237              : ok=4    changed=0    unreachable=0    failed=1   
+2018-05-14 03:07:55,166 p=8483 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 03:07:55,244 p=8483 u=gmonkey |  [0;34m1 plays in jumpcloud.yml[0m
+2018-05-14 03:07:55,250 p=8483 u=gmonkey |  PLAY ***************************************************************************
+2018-05-14 03:07:55,266 p=8483 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 03:07:55,893 p=8483 u=gmonkey |  [0;32mok: [18.196.50.237][0m
+2018-05-14 03:07:55,896 p=8483 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 03:07:56,083 p=8483 u=gmonkey |  [0;32mok: [18.196.50.237] => {"changed": false, "stat": {"exists": false}}[0m
+2018-05-14 03:07:56,086 p=8483 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 03:07:56,133 p=8483 u=gmonkey |  [0;32mok: [18.196.50.237] => {"ansible_facts": {"jc_not_installed": true}, "changed": false}[0m
+2018-05-14 03:07:56,135 p=8483 u=gmonkey |  TASK [shrikeh.jumpcloud : Install JumpCloud if required] ***********************
+2018-05-14 03:07:56,190 p=8483 u=gmonkey |  [0;36mincluded: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml for 18.196.50.237[0m
+2018-05-14 03:07:56,204 p=8483 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 03:07:56,334 p=8483 u=gmonkey |  [0;31mfatal: [18.196.50.237 -> 127.0.0.1]: FAILED! => {"changed": false, "failed": true, "msg": "httplib2 >= 0.7 is not installed"}[0m
+2018-05-14 03:07:56,337 p=8483 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 03:07:56,338 p=8483 u=gmonkey |  18.196.50.237              : ok=4    changed=0    unreachable=0    failed=1   
+2018-05-14 03:09:17,133 p=8518 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 03:09:17,206 p=8518 u=gmonkey |  [0;34m1 plays in jumpcloud.yml[0m
+2018-05-14 03:09:17,212 p=8518 u=gmonkey |  PLAY ***************************************************************************
+2018-05-14 03:09:17,228 p=8518 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 03:09:18,087 p=8518 u=gmonkey |  [0;32mok: [18.196.50.237][0m
+2018-05-14 03:09:18,090 p=8518 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 03:09:18,270 p=8518 u=gmonkey |  [0;32mok: [18.196.50.237] => {"changed": false, "stat": {"exists": false}}[0m
+2018-05-14 03:09:18,273 p=8518 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 03:09:18,313 p=8518 u=gmonkey |  [0;32mok: [18.196.50.237] => {"ansible_facts": {"jc_not_installed": true}, "changed": false}[0m
+2018-05-14 03:09:18,316 p=8518 u=gmonkey |  TASK [shrikeh.jumpcloud : Install JumpCloud if required] ***********************
+2018-05-14 03:09:18,366 p=8518 u=gmonkey |  [0;36mincluded: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml for 18.196.50.237[0m
+2018-05-14 03:09:18,378 p=8518 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 03:09:18,504 p=8518 u=gmonkey |  [0;31mfatal: [18.196.50.237 -> 127.0.0.1]: FAILED! => {"changed": false, "failed": true, "msg": "httplib2 >= 0.7 is not installed"}[0m
+2018-05-14 03:09:18,507 p=8518 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 03:09:18,508 p=8518 u=gmonkey |  18.196.50.237              : ok=4    changed=0    unreachable=0    failed=1   
+2018-05-14 03:10:24,185 p=8567 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 03:10:24,259 p=8567 u=gmonkey |  [0;34m1 plays in jumpcloud.yml[0m
+2018-05-14 03:10:24,265 p=8567 u=gmonkey |  PLAY ***************************************************************************
+2018-05-14 03:10:24,281 p=8567 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 03:10:25,079 p=8567 u=gmonkey |  [0;32mok: [18.196.50.237][0m
+2018-05-14 03:10:25,083 p=8567 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 03:10:25,282 p=8567 u=gmonkey |  [0;32mok: [18.196.50.237] => {"changed": false, "stat": {"exists": false}}[0m
+2018-05-14 03:10:25,285 p=8567 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 03:10:25,326 p=8567 u=gmonkey |  [0;32mok: [18.196.50.237] => {"ansible_facts": {"jc_not_installed": true}, "changed": false}[0m
+2018-05-14 03:10:25,329 p=8567 u=gmonkey |  TASK [shrikeh.jumpcloud : Install JumpCloud if required] ***********************
+2018-05-14 03:10:25,382 p=8567 u=gmonkey |  [0;36mincluded: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml for 18.196.50.237[0m
+2018-05-14 03:10:25,396 p=8567 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 03:10:25,517 p=8567 u=gmonkey |  [0;31mfatal: [18.196.50.237 -> 127.0.0.1]: FAILED! => {"changed": false, "failed": true, "msg": "httplib2 >= 0.7 is not installed"}[0m
+2018-05-14 03:10:25,520 p=8567 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 03:10:25,520 p=8567 u=gmonkey |  18.196.50.237              : ok=4    changed=0    unreachable=0    failed=1   
+2018-05-14 03:11:05,481 p=8600 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 03:11:05,559 p=8600 u=gmonkey |  [0;34m1 plays in jumpcloud.yml[0m
+2018-05-14 03:11:05,568 p=8600 u=gmonkey |  PLAY ***************************************************************************
+2018-05-14 03:11:05,582 p=8600 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 03:11:06,210 p=8600 u=gmonkey |  [0;32mok: [18.196.50.237][0m
+2018-05-14 03:11:06,213 p=8600 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 03:11:06,403 p=8600 u=gmonkey |  [0;32mok: [18.196.50.237] => {"changed": false, "stat": {"exists": false}}[0m
+2018-05-14 03:11:06,406 p=8600 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 03:11:06,447 p=8600 u=gmonkey |  [0;32mok: [18.196.50.237] => {"ansible_facts": {"jc_not_installed": true}, "changed": false}[0m
+2018-05-14 03:11:06,451 p=8600 u=gmonkey |  TASK [shrikeh.jumpcloud : Install JumpCloud if required] ***********************
+2018-05-14 03:11:06,501 p=8600 u=gmonkey |  [0;36mincluded: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml for 18.196.50.237[0m
+2018-05-14 03:11:06,515 p=8600 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 03:11:06,643 p=8600 u=gmonkey |  [0;31mfatal: [18.196.50.237 -> 127.0.0.1]: FAILED! => {"changed": false, "failed": true, "msg": "httplib2 >= 0.7 is not installed"}[0m
+2018-05-14 03:11:06,646 p=8600 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 03:11:06,646 p=8600 u=gmonkey |  18.196.50.237              : ok=4    changed=0    unreachable=0    failed=1   
+2018-05-14 03:12:45,297 p=8647 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 03:12:45,385 p=8647 u=gmonkey |  statically included: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml
+2018-05-14 03:12:45,407 p=8647 u=gmonkey |  PLAYBOOK: jumpcloud.yml ********************************************************
+2018-05-14 03:12:45,407 p=8647 u=gmonkey |  1 plays in jumpcloud.yml
+2018-05-14 03:12:45,410 p=8647 u=gmonkey |  PLAY [jumpcloud-clients] *******************************************************
+2018-05-14 03:12:45,433 p=8647 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 03:12:46,370 p=8647 u=gmonkey |  ok: [18.196.50.237]
+2018-05-14 03:12:46,374 p=8647 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 03:12:46,374 p=8647 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:2
+2018-05-14 03:12:46,675 p=8647 u=gmonkey |  ok: [18.196.50.237] => {"changed": false, "stat": {"exists": false}}
+2018-05-14 03:12:46,678 p=8647 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 03:12:46,678 p=8647 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:7
+2018-05-14 03:12:46,706 p=8647 u=gmonkey |  ok: [18.196.50.237] => {"ansible_facts": {"jc_not_installed": true}, "changed": false}
+2018-05-14 03:12:46,710 p=8647 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 03:12:46,711 p=8647 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:2
+2018-05-14 03:12:47,934 p=8647 u=gmonkey |  fatal: [18.196.50.237 -> 127.0.0.1]: FAILED! => {"changed": false, "connection": "close", "content": "Unauthorized", "content_length": "12", "content_type": "text/html; charset=utf-8", "date": "Sun, 13 May 2018 19:12:47 GMT", "failed": true, "msg": "Status code was not [200]: HTTP Error 401: Unauthorized", "redirected": false, "server": "nginx", "status": 401, "url": "https://kickstart.jumpcloud.com/Kickstart"}
+2018-05-14 03:12:47,935 p=8647 u=gmonkey |  NO MORE HOSTS LEFT *************************************************************
+2018-05-14 03:12:47,936 p=8647 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 03:12:47,937 p=8647 u=gmonkey |  18.196.50.237              : ok=3    changed=0    unreachable=0    failed=1   
+2018-05-14 03:13:57,667 p=8695 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 03:13:57,759 p=8695 u=gmonkey |  statically included: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml
+2018-05-14 03:13:57,780 p=8695 u=gmonkey |  PLAYBOOK: jumpcloud.yml ********************************************************
+2018-05-14 03:13:57,780 p=8695 u=gmonkey |  1 plays in jumpcloud.yml
+2018-05-14 03:13:57,783 p=8695 u=gmonkey |  PLAY [jumpcloud-clients] *******************************************************
+2018-05-14 03:13:57,807 p=8695 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 03:13:58,845 p=8695 u=gmonkey |  ok: [18.196.50.237]
+2018-05-14 03:13:58,848 p=8695 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 03:13:58,849 p=8695 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:2
+2018-05-14 03:13:59,162 p=8695 u=gmonkey |  ok: [18.196.50.237] => {"changed": false, "stat": {"exists": false}}
+2018-05-14 03:13:59,166 p=8695 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 03:13:59,167 p=8695 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:7
+2018-05-14 03:13:59,195 p=8695 u=gmonkey |  ok: [18.196.50.237] => {"ansible_facts": {"jc_not_installed": true}, "changed": false}
+2018-05-14 03:13:59,199 p=8695 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 03:13:59,199 p=8695 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:2
+2018-05-14 03:14:00,400 p=8695 u=gmonkey |  fatal: [18.196.50.237 -> 127.0.0.1]: FAILED! => {"changed": false, "connection": "close", "content": "Unauthorized", "content_length": "12", "content_type": "text/html; charset=utf-8", "date": "Sun, 13 May 2018 19:14:00 GMT", "failed": true, "msg": "Status code was not [200]: HTTP Error 401: Unauthorized", "redirected": false, "server": "nginx", "status": 401, "url": "https://kickstart.jumpcloud.com/Kickstart"}
+2018-05-14 03:14:00,401 p=8695 u=gmonkey |  NO MORE HOSTS LEFT *************************************************************
+2018-05-14 03:14:00,403 p=8695 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 03:14:00,404 p=8695 u=gmonkey |  18.196.50.237              : ok=3    changed=0    unreachable=0    failed=1   
+2018-05-14 03:14:48,540 p=8732 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 03:14:48,633 p=8732 u=gmonkey |  statically included: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml
+2018-05-14 03:14:48,653 p=8732 u=gmonkey |  PLAYBOOK: jumpcloud.yml ********************************************************
+2018-05-14 03:14:48,653 p=8732 u=gmonkey |  1 plays in jumpcloud.yml
+2018-05-14 03:14:48,656 p=8732 u=gmonkey |  PLAY [jumpcloud-clients] *******************************************************
+2018-05-14 03:14:48,680 p=8732 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 03:14:48,866 p=8732 u=gmonkey |  Using module file /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/grab001/local/lib/python2.7/site-packages/ansible/modules/core/system/setup.py
+2018-05-14 03:14:49,240 p=8732 u=gmonkey |  ok: [18.196.50.237]
+2018-05-14 03:14:49,244 p=8732 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 03:14:49,245 p=8732 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:2
+2018-05-14 03:14:49,341 p=8732 u=gmonkey |  Using module file /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/grab001/local/lib/python2.7/site-packages/ansible/modules/core/files/stat.py
+2018-05-14 03:14:49,551 p=8732 u=gmonkey |  ok: [18.196.50.237] => {
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "checksum_algorithm": "sha1", 
+            "follow": false, 
+            "get_checksum": true, 
+            "get_md5": true, 
+            "mime": false, 
+            "path": "/opt/jc"
+        }, 
+        "module_name": "stat"
+    }, 
+    "stat": {
+        "exists": false
+    }
+}
+2018-05-14 03:14:49,555 p=8732 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 03:14:49,555 p=8732 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:7
+2018-05-14 03:14:49,583 p=8732 u=gmonkey |  ok: [18.196.50.237] => {
+    "ansible_facts": {
+        "jc_not_installed": true
+    }, 
+    "changed": false, 
+    "invocation": {
+        "module_args": {
+            "jc_not_installed": true
+        }, 
+        "module_name": "set_fact"
+    }
+}
+2018-05-14 03:14:49,587 p=8732 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 03:14:49,588 p=8732 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:2
+2018-05-14 03:14:49,728 p=8732 u=gmonkey |  Using module file /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/grab001/local/lib/python2.7/site-packages/ansible/modules/core/network/basics/uri.py
+2018-05-14 03:14:50,821 p=8732 u=gmonkey |  fatal: [18.196.50.237 -> 127.0.0.1]: FAILED! => {
+    "changed": false, 
+    "connection": "close", 
+    "content": "Unauthorized", 
+    "content_length": "12", 
+    "content_type": "text/html; charset=utf-8", 
+    "date": "Sun, 13 May 2018 19:14:50 GMT", 
+    "failed": true, 
+    "invocation": {
+        "module_args": {
+            "HEADER_x-connect-key": "52caad26a039c8762b2590be5227da05922b1760", 
+            "backup": null, 
+            "body": null, 
+            "body_format": "raw", 
+            "content": null, 
+            "creates": null, 
+            "delimiter": null, 
+            "dest": null, 
+            "directory_mode": null, 
+            "follow": false, 
+            "follow_redirects": "safe", 
+            "force": false, 
+            "force_basic_auth": false, 
+            "group": null, 
+            "headers": {
+                "x-connect-key": "52caad26a039c8762b2590be5227da05922b1760"
+            }, 
+            "http_agent": "ansible-httpget", 
+            "method": "GET", 
+            "mode": null, 
+            "owner": null, 
+            "regexp": null, 
+            "remote_src": null, 
+            "removes": null, 
+            "return_content": true, 
+            "selevel": null, 
+            "serole": null, 
+            "setype": null, 
+            "seuser": null, 
+            "src": null, 
+            "status_code": [
+                200
+            ], 
+            "timeout": 30, 
+            "unsafe_writes": null, 
+            "url": "https://kickstart.jumpcloud.com/Kickstart", 
+            "url_password": null, 
+            "url_username": null, 
+            "use_proxy": true, 
+            "validate_certs": true
+        }, 
+        "module_name": "uri"
+    }, 
+    "msg": "Status code was not [200]: HTTP Error 401: Unauthorized", 
+    "redirected": false, 
+    "server": "nginx", 
+    "status": 401, 
+    "url": "https://kickstart.jumpcloud.com/Kickstart"
+}
+2018-05-14 03:14:50,822 p=8732 u=gmonkey |  NO MORE HOSTS LEFT *************************************************************
+2018-05-14 03:14:50,823 p=8732 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 03:14:50,824 p=8732 u=gmonkey |  18.196.50.237              : ok=3    changed=0    unreachable=0    failed=1   
+2018-05-14 03:15:04,388 p=8755 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 03:15:04,473 p=8755 u=gmonkey |  statically included: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml
+2018-05-14 03:15:04,494 p=8755 u=gmonkey |  PLAYBOOK: jumpcloud.yml ********************************************************
+2018-05-14 03:15:04,495 p=8755 u=gmonkey |  1 plays in jumpcloud.yml
+2018-05-14 03:15:04,497 p=8755 u=gmonkey |  PLAY [jumpcloud-clients] *******************************************************
+2018-05-14 03:15:04,523 p=8755 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 03:15:05,053 p=8755 u=gmonkey |  ok: [18.196.50.237]
+2018-05-14 03:15:05,056 p=8755 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 03:15:05,056 p=8755 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:2
+2018-05-14 03:15:05,405 p=8755 u=gmonkey |  ok: [18.196.50.237] => {"changed": false, "stat": {"exists": false}}
+2018-05-14 03:15:05,410 p=8755 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 03:15:05,410 p=8755 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:7
+2018-05-14 03:15:05,439 p=8755 u=gmonkey |  ok: [18.196.50.237] => {"ansible_facts": {"jc_not_installed": true}, "changed": false}
+2018-05-14 03:15:05,443 p=8755 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 03:15:05,443 p=8755 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:2
+2018-05-14 03:15:06,662 p=8755 u=gmonkey |  fatal: [18.196.50.237 -> 127.0.0.1]: FAILED! => {"changed": false, "connection": "close", "content": "Unauthorized", "content_length": "12", "content_type": "text/html; charset=utf-8", "date": "Sun, 13 May 2018 19:15:06 GMT", "failed": true, "msg": "Status code was not [200]: HTTP Error 401: Unauthorized", "redirected": false, "server": "nginx", "status": 401, "url": "https://kickstart.jumpcloud.com/Kickstart"}
+2018-05-14 03:15:06,663 p=8755 u=gmonkey |  NO MORE HOSTS LEFT *************************************************************
+2018-05-14 03:15:06,664 p=8755 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 03:15:06,665 p=8755 u=gmonkey |  18.196.50.237              : ok=3    changed=0    unreachable=0    failed=1   
+2018-05-14 03:41:23,014 p=8950 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 03:41:23,101 p=8950 u=gmonkey |  statically included: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml
+2018-05-14 03:41:23,123 p=8950 u=gmonkey |  PLAYBOOK: jumpcloud.yml ********************************************************
+2018-05-14 03:41:23,124 p=8950 u=gmonkey |  1 plays in jumpcloud.yml
+2018-05-14 03:41:23,126 p=8950 u=gmonkey |  PLAY [jumpcloud-clients] *******************************************************
+2018-05-14 03:41:23,151 p=8950 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 03:41:24,231 p=8950 u=gmonkey |  ok: [18.196.50.237]
+2018-05-14 03:41:24,236 p=8950 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 03:41:24,236 p=8950 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:2
+2018-05-14 03:41:24,605 p=8950 u=gmonkey |  ok: [18.196.50.237] => {"changed": false, "stat": {"exists": false}}
+2018-05-14 03:41:24,609 p=8950 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 03:41:24,610 p=8950 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:7
+2018-05-14 03:41:24,637 p=8950 u=gmonkey |  ok: [18.196.50.237] => {"ansible_facts": {"jc_not_installed": true}, "changed": false}
+2018-05-14 03:41:24,642 p=8950 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 03:41:24,642 p=8950 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:2
+2018-05-14 03:41:26,191 p=8950 u=gmonkey |  ok: [18.196.50.237 -> 127.0.0.1] => {"cache_control": "no-store", "changed": false, "connection": "close", "content": "#!/bin/bash\n\nLOGFILE=\"/opt/jc/jcagentInstall.log\"\nPATH='/sbin:/bin:/usr/sbin:/usr/bin'\n\nagentInstallDir='/opt/jc/'\nclientKeyName='client.key'\nclientCrtName='client.crt'\ncaCrtName='ca.crt'\nconnectKey='1f42e80023dfc11a4a69dbfa52c92570101caad4'\n\nclientKey=\"$agentInstallDir/$clientKeyName\"\nclientCrt=\"$agentInstallDir/$clientCrtName\"\ncaCrt=\"$agentInstallDir/$caCrtName\"\ninstallScript=\"$agentInstallDir/agentInstall.sh\"\n\nproxyFile=\"/etc/jcagent-proxy.conf\"\n\nif [ -r \"${proxyFile}\" ]\nthen\n  export http_proxy=\"`cat ${proxyFile}`\"\n  export https_proxy=\"`cat ${proxyFile}`\"\nfi\n\n\nlogMessage() {\n    local msg=\"$(date -u): $1\"\n    echo \"$msg\" &> 2\n    echo \"$msg\" >> $LOGFILE\n}\n\nfailWithMessage() {\n    logMessage \"$1\"\n    logMessage \"It appears your agent installation has failed. Please contact support@jumpcloud.com.\"\n    exit 1\n}\n\n\nprintMessageIfNotZero() {\n  if [ \"$1\" != '0' ]; then\n    logMessage \"$2\"\n  fi\n}\nfailIfNotZero() {\n    if [ \"$1\" != '0' ]; then\n        failWithMessage \"$2\"\n    fi\n}\n\nfailIfDoesNotExist() {\n    if [ ! -e \"$1\" ]; then\n        failWithMessage \"$2\"\n    fi\n}\n\nsetTimeIfIncorrect() {\n  local ERRMSG=\"$2\"\n  if [ \"$1\" != '0' ]; then\n    checkFor 'ntpdate'\n    local CMDRES=\"$?\"\n    if [ \"$CMDRES\" != '0' ]; then\n      failWithMessage \"$ERRMSG\"\n    else\n      logMessage \"$2\"\n      ntpdate -u pool.ntp.org\n      localTime=\"$(date +%s)\"\n      curlAgentWithoutCerts --data \"time=$localTime\" \"$timeUrl\"\n      local CURLRES=\"$?\"\n      printMessageIfNotZero \"$CURLRES\" \"Problem setting time with ntpdate\"\n      failIfNotZero \"$CURLRES\" \"$ERRMSG\"\n    fi\n  fi\n}\ncheckFor() {\n    type \"$1\" >/dev/null 2>&1\n}\n\nfailIfCommandNotFound() {\n    checkFor \"$1\"\n    failIfNotZero \"$?\" \"Necessary command not found: '$1'\"\n}\n\ncurlAgentWithoutCerts() {\n    attempts=3\n  delay=3\n    n=0\n    until curl --silent --show-error --fail --header \"X-Connect-Key: $connectKey\" \"$@\"; do\n        ret=$?\n        n=$[$n+1]\n        if [ \"$n\" -ge \"$attempts\" ]; then\n            logMessage \"Failed curl ($n of $attempts), quitting ...\"\n            return $ret\n        else\n            logMessage \"Failed curl ($n of $attempts), retrying after delay ...\"\n            sleep $delay\n        fi\n    done\n    return $?\n}\n\nfailIfCommandNotFound id\nif [ \"$(id -u)\" != '0' ]; then\n    failWithMessage 'Script must be run as root (or with sudo)'\nfi\n\nfailIfCommandNotFound mkdir\nfailIfCommandNotFound chmod\nmkdir -p \"$agentInstallDir/bin\"\nchmod 700 \"$agentInstallDir\"\n\npublicUrlBase='https://kickstart.jumpcloud.com'\nprivateUrlBase='https://private-kickstart.jumpcloud.com'\n\ndetectUrl=\"$publicUrlBase/Detect\"\ntimeUrl=\"$publicUrlBase/Time\"\ninstallUrl=\"$publicUrlBase/GetAgentInstall\"\n\ntemplateFile=\"$agentInstallDir/templateId\"\nclientCsr=\"$agentInstallDir/client.csr\"\n\nbootstrapFile=\"/opt/jc//agentBootstrap.json\"\n\n# Write the bootstrap file to allow for resealing\nmkdir -p \"/opt/jc/\"\ncat <<-EOF >\"${bootstrapFile}\"\n    {\n       \"publicKickstartUrl\": \"https://kickstart.jumpcloud.com\",\n       \"privateKickstartUrl\": \"https://private-kickstart.jumpcloud.com\",\n       \"connectKey\": \"1f42e80023dfc11a4a69dbfa52c92570101caad4\"\n    }\nEOF\n\nif grep -q Debian /etc/issue; then # force curl install for debian\n  apt-get install curl -y\nfi\n\nlogMessage \"Starting agent install, connectKey=$connectKey\"\n\nlogMessage 'Checking for necessary install commands...'\nnotFoundCommands=''\nfor command in bash cat date grep head openssl rm uname tee; do\n    checkFor \"$command\"\n    if [ \"$?\" != '0' ]; then\n        notFoundCommands=\"$notFoundCommands $command\"\n    fi\ndone\nif [ -n \"$notFoundCommands\" ]; then\n    failWithMessage \"Missing necessary install commands: $notFoundCommands\"\nelse\n    logMessage 'Necessary install commands found'\nfi\n\nlogMessage 'Checking system compatibility...'\narch=\"$(uname -m)\"\nif [ -f /etc/system-release ]; then\n    logMessage \"Getting OS info from /etc/system-release\"\n    os=\"$(head -n 1 /etc/system-release)\"\nelse\n    logMessage \"Getting OS info from /etc/issue\"\n    os=\"$(head -n 1 /etc/issue)\"\nfi\ncurlAgentWithoutCerts --data \"arch=$arch&os=$os\" --output \"$templateFile\" \"$detectUrl\"\nif [ \"$?\" != '0' ] || [ ! -f \"$templateFile\" ]; then\n    failWithMessage \"Your OS/architecture [$os/$arch] is not supported. Please visit https://support.jumpcloud.com/customer/portal/articles/2390451-jumpcloud-agent-compatibility-and-system-impacts for a list of supported systems.\"\nfi\nlogMessage 'System is supported'\ntemplateId=\"$(cat \"$templateFile\")\"\nrm -f \"$templateFile\"\n\nlogMessage 'Checking local system time...'\nlocalTime=\"$(date +%s)\"\ncurlAgentWithoutCerts --data \"time=$localTime\" \"$timeUrl\"\nsetTimeIfIncorrect \"$?\" \"Your system time seems inaccurate. Please ensure your system is set to the correct time by running ntpdate ('ntpdate -u pool.ntp.org') or verifying that ntpd is configured properly.\"\nlocalTime=\"$(date +%s)\"\nlogMessage 'System time is accurate'\n\ncat >\"$caCrt\" <<END_OF_CA\n-----BEGIN CERTIFICATE-----\nMIIF7zCCA9egAwIBAgICEAMwDQYJKoZIhvcNAQELBQAwgYExCzAJBgNVBAYTAlVT\nMREwDwYDVQQIDAhDb2xvcmFkbzESMBAGA1UECgwJSnVtcENsb3VkMR4wHAYDVQQL\nDBVKdW1wQ2xvdWQgRW5naW5lZXJpbmcxKzApBgNVBAMMIkp1bXBDbG91ZCBQcm9k\ndWN0aW9uIEFnZW50IFJvb3QgQ0EwHhcNMTcxMDI0MTY0ODQwWhcNMjcxMDIyMTY0\nODQwWjCBijELMAkGA1UEBhMCVVMxETAPBgNVBAgMCENvbG9yYWRvMRIwEAYDVQQK\nDAlKdW1wQ2xvdWQxHjAcBgNVBAsMFUp1bXBDbG91ZCBFbmdpbmVlcmluZzE0MDIG\nA1UEAwwrSnVtcENsb3VkIFByb2R1Y3Rpb24gQWdlbnQgU2VydmVyIElzc3VlciBD\nQTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAOIkU+shzb15SAdBcrJe\nBbD/Y6WCyOLYTvoJbSWzKeqMZ9yuyX5FgQq/eHrqYjD4NBqROB8IzoH1ipKt6CTv\nLvN2cH8WNdJvHUN45oH+mleNlK8zH227PiWHxduxnjiPpejV1ogF/Tagnm7HQM/M\n8CVILYMAm4B1K6i0BRJjByykjGqk849tWXhh8N8NkMh79QDTxFH8WRTaLfIWhXQL\nruD+IDyRUkvJyuMmjhdkaoqWDHvY4V+iMPQ2UOb1VME0Q1MFoFq/V1LNmaN9ZTPZ\nzd+YzwIkYuV8+tKsOCV/xToZqclID7dUoezrddN0tTrAT8/EO/L4v9EObDsi5pl/\nAQtoSBmW0gZC9HflJgyOXO8bvawQLjpx/8sOEr+9KfPWtmZ5o6/46GeVnMtuivV4\nMK0W3CdQL/NcpoZWkX/fr4xFR4HNrL6bOgIKgPw0iVS7RwRNjiauGkIxV8yO9ZIZ\nqlhlQc2TG8SaU1l0lLEdC/Bs+zC4J0dw3Y2YQU8p3XNFG9scfqAYDSz6zVgWbuvh\n/ZNHpeizQnLDI/COFpvuWociUplV/K0yRgA/5fLTBuy8r6lLVFjaYE3Q7we0lPzD\n1D5fQmMBzPa4GfI5EztUOuX5yLY5nW5TawghBdT0yUbJehMJoa7IvNLIT8uY/wHJ\nin+3ggS4DFicoej9mzQbs3+RAgMBAAGjZjBkMB0GA1UdDgQWBBS6i5csdoEOdTr9\n4TnRlEijTt47VDAfBgNVHSMEGDAWgBSz/gXD3CxSjikrGmDvLjI1a0VxJzASBgNV\nHRMBAf8ECDAGAQH/AgEAMA4GA1UdDwEB/wQEAwIBhjANBgkqhkiG9w0BAQsFAAOC\nAgEAMWy5DHMVHJr70HAaJP+wQiqr8YiwNo0FhWewNbWbtr2tb+7+iKLftRJOBbEN\nfFcBdEFuj5YkbISIgUoyOJwl95403YQSHlRROqLewRG1vaRvNi+IfrHXFsSlZuHq\nNTet3PfkLLCVpmWJCtMhKUG3EBkb24TqINgfEChHaWiVeXgNCeXdVpKUBGbxVdZ8\nIM/2cSb5951VK9Da09xzfpeX5hDQGuzSD9QkOtXeg27G5Fex3oRvmAGxegU+LLPM\nzhBkju9IaRbe/f6bPPyFHagwNv9bSa9YjYS0VsPhv9mgTG0TNHsJUicOpNxkW3jv\nimuVlanQvKjlCWYmZPswHKP3+V4vI4pO9gOfzrKKGjQ33/Z2sG6KmIbMqMol9Sae\nwsb+W2gOzdbqqi8nT5pEyk8LjE6NiSXDooNtEsCBLGbQ5kMjzpPrMwJOdmnPWEdm\ngmeSYDilvemsBZTFY8Ay1JSXK61aOlJW1e4LVWbz22HSRvCPqyedG7ar7gL32oIy\n2hx2rE9lNf1MSIOAhK5g/i3ijFUv54/EMWqabVxPFDGQUozuMvDq4ztUI+3Af0LG\nAhNDkCkdnwvQtWCjxFmHNvq1MimXm3A4kcLseb/fho6FMLGP2g8Rh8HxKz1kRCXC\nYX66zt9AUMZr1z0m+saxo/aGO7jRYrSG9sZANwK11ZY269o=\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIF6jCCA9KgAwIBAgIJAJBXUsJ+UkXfMA0GCSqGSIb3DQEBCwUAMIGBMQswCQYD\nVQQGEwJVUzERMA8GA1UECAwIQ29sb3JhZG8xEjAQBgNVBAoMCUp1bXBDbG91ZDEe\nMBwGA1UECwwVSnVtcENsb3VkIEVuZ2luZWVyaW5nMSswKQYDVQQDDCJKdW1wQ2xv\ndWQgUHJvZHVjdGlvbiBBZ2VudCBSb290IENBMB4XDTE3MTAyNDE2NDgzOVoXDTM3\nMTAxOTE2NDgzOVowgYExCzAJBgNVBAYTAlVTMREwDwYDVQQIDAhDb2xvcmFkbzES\nMBAGA1UECgwJSnVtcENsb3VkMR4wHAYDVQQLDBVKdW1wQ2xvdWQgRW5naW5lZXJp\nbmcxKzApBgNVBAMMIkp1bXBDbG91ZCBQcm9kdWN0aW9uIEFnZW50IFJvb3QgQ0Ew\nggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDrAqUlYdvN55qrR8E0CE41\nbE38dsB+Ca1Umgl+N3RENJEIjkZx17yFHbXpmIufrX2MdvXo1eD1G5Y2DsCzL3AK\nmqOuX20mRVQ+0yLzYsyF87QXzjP6wLPY4JAsQUtcEeogkmNf+mpUBGu2s9P0Csse\nB499Lk6Xy/F4iPez+xTIrgd0+mmrPTbgQK5Uegmb22SxYZadZ8rVJeTjL8iTdj80\nGcFS6R94vmRejcVgnz4XFok72lJqSyB1rbPtS5uhmN4BDxQRQ1qeBtET9Eh58n+9\n15aqxSyojWyHHAZ7GFPqIyai+TX8YQ1OyRjalEzJFJLvpCkNt4T43RcCEitRF0fD\nrqHTULUSq7aagJmJPezkE+1IIVZOnmp1QMvFLA06NViGrbbZAiHyW1S4JH8mNLgv\nb/Qw2fexad1q4zOFPEG5rgBe/THuVRgtxvLlE9pE0cFz0rRsPWdtNwlpZX1tIZm2\nUeaZZg7lqf8WfgDpX8Rtko+9qXfhYFU+A0haqqzDXjIuqeoaLo9UqOgzjN4lUU4/\nzmg7NPCjFmDTGH864zgw7H3cGU3c2cae+JPSxPuDQdGMoV+EmOfwGrq1p7Ekjs3y\nvtPmfVsbGedpq2kPbKC33RT2/NieUyv2K+MiWif6gG5vNUzMU1KQ51297AfXuO06\nrA4snhNJ5OoduxKyVkVeZQIDAQABo2MwYTAdBgNVHQ4EFgQUs/4Fw9wsUo4pKxpg\n7y4yNWtFcScwHwYDVR0jBBgwFoAUs/4Fw9wsUo4pKxpg7y4yNWtFcScwDwYDVR0T\nAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAYYwDQYJKoZIhvcNAQELBQADggIBADWy\n5lLLJK0Kpi+p0daQ+X4jfo5A7++8X3CLXldLgN2w29OcnuCSLGx+rZnGT2PqLtjo\nPIJD8HgRRXkEfi0EL2tZkWvs+aBh7Io6yAnJRxPdZcXcZvCi8meicqxH95YZY84L\ncZkaj/+rzOw8XRmT8iFbSanImDTN8QbG/OZHgTi0r8bUKsW0HC6IcmPaOxraL5RY\nt6cTeXf5Fhwa+4YjX2mgFYvNuDTRTAJQEUeL6dXXP45cZTuQSazWodogDocN5eiB\nfAV53r7xY5YtWxbluTLBSblDOuRF4kUhDVeoSL0yNNOy7K9QYlM3edQVSaXxmwzD\nQILBlAwhbPoNwRLliqDybR3ldQf+eQjtnGby0yPQjoroyVdk5so7UJZ+KlkuJScu\nSbyaj+aac9jOBVakVWjMqCw1HmWggIoapO1h13WNDVUlcORPseDwbspSDTrdVnen\nw8TeiciUOBaPmf0+gDiJTK9y166sL8JWkX3qITh51G9j06vmII4BXUgDWZg4O3Vx\nzu3OJdurELqQZc+pbxCahv8M5F8vlCwHmZVcbifmtHsupwTrrgxRyujbv6nkxLrb\nzObwT0Fcr+M+1ppS3CsHZS1gQEfIWv6JhkiFM+uobnSA9/l1oWcgirM1SyPFZ2y9\n5mc2h7aFx9xMEWYJT6tonS2LtWklRLx2rcM7g+Wq\n-----END CERTIFICATE-----\n\nEND_OF_CA\nchmod 600 \"$caCrt\"\n\nlogMessage \"Fetching second stage installer...\"\ncurlAgentWithoutCerts --data \"templateId=$templateId\" --output \"$installScript\" \"$installUrl\"\nfailIfNotZero \"$?\" 'Problem fetching second stage installer'\nfailIfDoesNotExist \"$installScript\" 'Problem fetching second stage installer'\nlogMessage 'Successfully fetched second stage installer'\n\nlogMessage 'Executing second stage installer...'\nbash \"$installScript\"\n", "content_length": "9540", "content_type": "text/plain", "date": "Sun, 13 May 2018 19:41:26 GMT", "etag": "\"-1746897123\"", "msg": "OK (9540 bytes)", "pragma": "no-cache", "redirected": false, "server": "nginx", "status": 200, "url": "https://kickstart.jumpcloud.com/Kickstart"}
+2018-05-14 03:41:26,194 p=8950 u=gmonkey |  TASK [shrikeh.jumpcloud : Register the install script output as a variable] ****
+2018-05-14 03:41:26,194 p=8950 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:12
+2018-05-14 03:41:26,226 p=8950 u=gmonkey |  ok: [18.196.50.237] => {"ansible_facts": {"jumpcloud_install_script_contents": "#!/bin/bash\n\nLOGFILE=\"/opt/jc/jcagentInstall.log\"\nPATH='/sbin:/bin:/usr/sbin:/usr/bin'\n\nagentInstallDir='/opt/jc/'\nclientKeyName='client.key'\nclientCrtName='client.crt'\ncaCrtName='ca.crt'\nconnectKey='1f42e80023dfc11a4a69dbfa52c92570101caad4'\n\nclientKey=\"$agentInstallDir/$clientKeyName\"\nclientCrt=\"$agentInstallDir/$clientCrtName\"\ncaCrt=\"$agentInstallDir/$caCrtName\"\ninstallScript=\"$agentInstallDir/agentInstall.sh\"\n\nproxyFile=\"/etc/jcagent-proxy.conf\"\n\nif [ -r \"${proxyFile}\" ]\nthen\n  export http_proxy=\"`cat ${proxyFile}`\"\n  export https_proxy=\"`cat ${proxyFile}`\"\nfi\n\n\nlogMessage() {\n    local msg=\"$(date -u): $1\"\n    echo \"$msg\" &> 2\n    echo \"$msg\" >> $LOGFILE\n}\n\nfailWithMessage() {\n    logMessage \"$1\"\n    logMessage \"It appears your agent installation has failed. Please contact support@jumpcloud.com.\"\n    exit 1\n}\n\n\nprintMessageIfNotZero() {\n  if [ \"$1\" != '0' ]; then\n    logMessage \"$2\"\n  fi\n}\nfailIfNotZero() {\n    if [ \"$1\" != '0' ]; then\n        failWithMessage \"$2\"\n    fi\n}\n\nfailIfDoesNotExist() {\n    if [ ! -e \"$1\" ]; then\n        failWithMessage \"$2\"\n    fi\n}\n\nsetTimeIfIncorrect() {\n  local ERRMSG=\"$2\"\n  if [ \"$1\" != '0' ]; then\n    checkFor 'ntpdate'\n    local CMDRES=\"$?\"\n    if [ \"$CMDRES\" != '0' ]; then\n      failWithMessage \"$ERRMSG\"\n    else\n      logMessage \"$2\"\n      ntpdate -u pool.ntp.org\n      localTime=\"$(date +%s)\"\n      curlAgentWithoutCerts --data \"time=$localTime\" \"$timeUrl\"\n      local CURLRES=\"$?\"\n      printMessageIfNotZero \"$CURLRES\" \"Problem setting time with ntpdate\"\n      failIfNotZero \"$CURLRES\" \"$ERRMSG\"\n    fi\n  fi\n}\ncheckFor() {\n    type \"$1\" >/dev/null 2>&1\n}\n\nfailIfCommandNotFound() {\n    checkFor \"$1\"\n    failIfNotZero \"$?\" \"Necessary command not found: '$1'\"\n}\n\ncurlAgentWithoutCerts() {\n    attempts=3\n  delay=3\n    n=0\n    until curl --silent --show-error --fail --header \"X-Connect-Key: $connectKey\" \"$@\"; do\n        ret=$?\n        n=$[$n+1]\n        if [ \"$n\" -ge \"$attempts\" ]; then\n            logMessage \"Failed curl ($n of $attempts), quitting ...\"\n            return $ret\n        else\n            logMessage \"Failed curl ($n of $attempts), retrying after delay ...\"\n            sleep $delay\n        fi\n    done\n    return $?\n}\n\nfailIfCommandNotFound id\nif [ \"$(id -u)\" != '0' ]; then\n    failWithMessage 'Script must be run as root (or with sudo)'\nfi\n\nfailIfCommandNotFound mkdir\nfailIfCommandNotFound chmod\nmkdir -p \"$agentInstallDir/bin\"\nchmod 700 \"$agentInstallDir\"\n\npublicUrlBase='https://kickstart.jumpcloud.com'\nprivateUrlBase='https://private-kickstart.jumpcloud.com'\n\ndetectUrl=\"$publicUrlBase/Detect\"\ntimeUrl=\"$publicUrlBase/Time\"\ninstallUrl=\"$publicUrlBase/GetAgentInstall\"\n\ntemplateFile=\"$agentInstallDir/templateId\"\nclientCsr=\"$agentInstallDir/client.csr\"\n\nbootstrapFile=\"/opt/jc//agentBootstrap.json\"\n\n# Write the bootstrap file to allow for resealing\nmkdir -p \"/opt/jc/\"\ncat <<-EOF >\"${bootstrapFile}\"\n    {\n       \"publicKickstartUrl\": \"https://kickstart.jumpcloud.com\",\n       \"privateKickstartUrl\": \"https://private-kickstart.jumpcloud.com\",\n       \"connectKey\": \"1f42e80023dfc11a4a69dbfa52c92570101caad4\"\n    }\nEOF\n\nif grep -q Debian /etc/issue; then # force curl install for debian\n  apt-get install curl -y\nfi\n\nlogMessage \"Starting agent install, connectKey=$connectKey\"\n\nlogMessage 'Checking for necessary install commands...'\nnotFoundCommands=''\nfor command in bash cat date grep head openssl rm uname tee; do\n    checkFor \"$command\"\n    if [ \"$?\" != '0' ]; then\n        notFoundCommands=\"$notFoundCommands $command\"\n    fi\ndone\nif [ -n \"$notFoundCommands\" ]; then\n    failWithMessage \"Missing necessary install commands: $notFoundCommands\"\nelse\n    logMessage 'Necessary install commands found'\nfi\n\nlogMessage 'Checking system compatibility...'\narch=\"$(uname -m)\"\nif [ -f /etc/system-release ]; then\n    logMessage \"Getting OS info from /etc/system-release\"\n    os=\"$(head -n 1 /etc/system-release)\"\nelse\n    logMessage \"Getting OS info from /etc/issue\"\n    os=\"$(head -n 1 /etc/issue)\"\nfi\ncurlAgentWithoutCerts --data \"arch=$arch&os=$os\" --output \"$templateFile\" \"$detectUrl\"\nif [ \"$?\" != '0' ] || [ ! -f \"$templateFile\" ]; then\n    failWithMessage \"Your OS/architecture [$os/$arch] is not supported. Please visit https://support.jumpcloud.com/customer/portal/articles/2390451-jumpcloud-agent-compatibility-and-system-impacts for a list of supported systems.\"\nfi\nlogMessage 'System is supported'\ntemplateId=\"$(cat \"$templateFile\")\"\nrm -f \"$templateFile\"\n\nlogMessage 'Checking local system time...'\nlocalTime=\"$(date +%s)\"\ncurlAgentWithoutCerts --data \"time=$localTime\" \"$timeUrl\"\nsetTimeIfIncorrect \"$?\" \"Your system time seems inaccurate. Please ensure your system is set to the correct time by running ntpdate ('ntpdate -u pool.ntp.org') or verifying that ntpd is configured properly.\"\nlocalTime=\"$(date +%s)\"\nlogMessage 'System time is accurate'\n\ncat >\"$caCrt\" <<END_OF_CA\n-----BEGIN CERTIFICATE-----\nMIIF7zCCA9egAwIBAgICEAMwDQYJKoZIhvcNAQELBQAwgYExCzAJBgNVBAYTAlVT\nMREwDwYDVQQIDAhDb2xvcmFkbzESMBAGA1UECgwJSnVtcENsb3VkMR4wHAYDVQQL\nDBVKdW1wQ2xvdWQgRW5naW5lZXJpbmcxKzApBgNVBAMMIkp1bXBDbG91ZCBQcm9k\ndWN0aW9uIEFnZW50IFJvb3QgQ0EwHhcNMTcxMDI0MTY0ODQwWhcNMjcxMDIyMTY0\nODQwWjCBijELMAkGA1UEBhMCVVMxETAPBgNVBAgMCENvbG9yYWRvMRIwEAYDVQQK\nDAlKdW1wQ2xvdWQxHjAcBgNVBAsMFUp1bXBDbG91ZCBFbmdpbmVlcmluZzE0MDIG\nA1UEAwwrSnVtcENsb3VkIFByb2R1Y3Rpb24gQWdlbnQgU2VydmVyIElzc3VlciBD\nQTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAOIkU+shzb15SAdBcrJe\nBbD/Y6WCyOLYTvoJbSWzKeqMZ9yuyX5FgQq/eHrqYjD4NBqROB8IzoH1ipKt6CTv\nLvN2cH8WNdJvHUN45oH+mleNlK8zH227PiWHxduxnjiPpejV1ogF/Tagnm7HQM/M\n8CVILYMAm4B1K6i0BRJjByykjGqk849tWXhh8N8NkMh79QDTxFH8WRTaLfIWhXQL\nruD+IDyRUkvJyuMmjhdkaoqWDHvY4V+iMPQ2UOb1VME0Q1MFoFq/V1LNmaN9ZTPZ\nzd+YzwIkYuV8+tKsOCV/xToZqclID7dUoezrddN0tTrAT8/EO/L4v9EObDsi5pl/\nAQtoSBmW0gZC9HflJgyOXO8bvawQLjpx/8sOEr+9KfPWtmZ5o6/46GeVnMtuivV4\nMK0W3CdQL/NcpoZWkX/fr4xFR4HNrL6bOgIKgPw0iVS7RwRNjiauGkIxV8yO9ZIZ\nqlhlQc2TG8SaU1l0lLEdC/Bs+zC4J0dw3Y2YQU8p3XNFG9scfqAYDSz6zVgWbuvh\n/ZNHpeizQnLDI/COFpvuWociUplV/K0yRgA/5fLTBuy8r6lLVFjaYE3Q7we0lPzD\n1D5fQmMBzPa4GfI5EztUOuX5yLY5nW5TawghBdT0yUbJehMJoa7IvNLIT8uY/wHJ\nin+3ggS4DFicoej9mzQbs3+RAgMBAAGjZjBkMB0GA1UdDgQWBBS6i5csdoEOdTr9\n4TnRlEijTt47VDAfBgNVHSMEGDAWgBSz/gXD3CxSjikrGmDvLjI1a0VxJzASBgNV\nHRMBAf8ECDAGAQH/AgEAMA4GA1UdDwEB/wQEAwIBhjANBgkqhkiG9w0BAQsFAAOC\nAgEAMWy5DHMVHJr70HAaJP+wQiqr8YiwNo0FhWewNbWbtr2tb+7+iKLftRJOBbEN\nfFcBdEFuj5YkbISIgUoyOJwl95403YQSHlRROqLewRG1vaRvNi+IfrHXFsSlZuHq\nNTet3PfkLLCVpmWJCtMhKUG3EBkb24TqINgfEChHaWiVeXgNCeXdVpKUBGbxVdZ8\nIM/2cSb5951VK9Da09xzfpeX5hDQGuzSD9QkOtXeg27G5Fex3oRvmAGxegU+LLPM\nzhBkju9IaRbe/f6bPPyFHagwNv9bSa9YjYS0VsPhv9mgTG0TNHsJUicOpNxkW3jv\nimuVlanQvKjlCWYmZPswHKP3+V4vI4pO9gOfzrKKGjQ33/Z2sG6KmIbMqMol9Sae\nwsb+W2gOzdbqqi8nT5pEyk8LjE6NiSXDooNtEsCBLGbQ5kMjzpPrMwJOdmnPWEdm\ngmeSYDilvemsBZTFY8Ay1JSXK61aOlJW1e4LVWbz22HSRvCPqyedG7ar7gL32oIy\n2hx2rE9lNf1MSIOAhK5g/i3ijFUv54/EMWqabVxPFDGQUozuMvDq4ztUI+3Af0LG\nAhNDkCkdnwvQtWCjxFmHNvq1MimXm3A4kcLseb/fho6FMLGP2g8Rh8HxKz1kRCXC\nYX66zt9AUMZr1z0m+saxo/aGO7jRYrSG9sZANwK11ZY269o=\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIF6jCCA9KgAwIBAgIJAJBXUsJ+UkXfMA0GCSqGSIb3DQEBCwUAMIGBMQswCQYD\nVQQGEwJVUzERMA8GA1UECAwIQ29sb3JhZG8xEjAQBgNVBAoMCUp1bXBDbG91ZDEe\nMBwGA1UECwwVSnVtcENsb3VkIEVuZ2luZWVyaW5nMSswKQYDVQQDDCJKdW1wQ2xv\ndWQgUHJvZHVjdGlvbiBBZ2VudCBSb290IENBMB4XDTE3MTAyNDE2NDgzOVoXDTM3\nMTAxOTE2NDgzOVowgYExCzAJBgNVBAYTAlVTMREwDwYDVQQIDAhDb2xvcmFkbzES\nMBAGA1UECgwJSnVtcENsb3VkMR4wHAYDVQQLDBVKdW1wQ2xvdWQgRW5naW5lZXJp\nbmcxKzApBgNVBAMMIkp1bXBDbG91ZCBQcm9kdWN0aW9uIEFnZW50IFJvb3QgQ0Ew\nggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDrAqUlYdvN55qrR8E0CE41\nbE38dsB+Ca1Umgl+N3RENJEIjkZx17yFHbXpmIufrX2MdvXo1eD1G5Y2DsCzL3AK\nmqOuX20mRVQ+0yLzYsyF87QXzjP6wLPY4JAsQUtcEeogkmNf+mpUBGu2s9P0Csse\nB499Lk6Xy/F4iPez+xTIrgd0+mmrPTbgQK5Uegmb22SxYZadZ8rVJeTjL8iTdj80\nGcFS6R94vmRejcVgnz4XFok72lJqSyB1rbPtS5uhmN4BDxQRQ1qeBtET9Eh58n+9\n15aqxSyojWyHHAZ7GFPqIyai+TX8YQ1OyRjalEzJFJLvpCkNt4T43RcCEitRF0fD\nrqHTULUSq7aagJmJPezkE+1IIVZOnmp1QMvFLA06NViGrbbZAiHyW1S4JH8mNLgv\nb/Qw2fexad1q4zOFPEG5rgBe/THuVRgtxvLlE9pE0cFz0rRsPWdtNwlpZX1tIZm2\nUeaZZg7lqf8WfgDpX8Rtko+9qXfhYFU+A0haqqzDXjIuqeoaLo9UqOgzjN4lUU4/\nzmg7NPCjFmDTGH864zgw7H3cGU3c2cae+JPSxPuDQdGMoV+EmOfwGrq1p7Ekjs3y\nvtPmfVsbGedpq2kPbKC33RT2/NieUyv2K+MiWif6gG5vNUzMU1KQ51297AfXuO06\nrA4snhNJ5OoduxKyVkVeZQIDAQABo2MwYTAdBgNVHQ4EFgQUs/4Fw9wsUo4pKxpg\n7y4yNWtFcScwHwYDVR0jBBgwFoAUs/4Fw9wsUo4pKxpg7y4yNWtFcScwDwYDVR0T\nAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAYYwDQYJKoZIhvcNAQELBQADggIBADWy\n5lLLJK0Kpi+p0daQ+X4jfo5A7++8X3CLXldLgN2w29OcnuCSLGx+rZnGT2PqLtjo\nPIJD8HgRRXkEfi0EL2tZkWvs+aBh7Io6yAnJRxPdZcXcZvCi8meicqxH95YZY84L\ncZkaj/+rzOw8XRmT8iFbSanImDTN8QbG/OZHgTi0r8bUKsW0HC6IcmPaOxraL5RY\nt6cTeXf5Fhwa+4YjX2mgFYvNuDTRTAJQEUeL6dXXP45cZTuQSazWodogDocN5eiB\nfAV53r7xY5YtWxbluTLBSblDOuRF4kUhDVeoSL0yNNOy7K9QYlM3edQVSaXxmwzD\nQILBlAwhbPoNwRLliqDybR3ldQf+eQjtnGby0yPQjoroyVdk5so7UJZ+KlkuJScu\nSbyaj+aac9jOBVakVWjMqCw1HmWggIoapO1h13WNDVUlcORPseDwbspSDTrdVnen\nw8TeiciUOBaPmf0+gDiJTK9y166sL8JWkX3qITh51G9j06vmII4BXUgDWZg4O3Vx\nzu3OJdurELqQZc+pbxCahv8M5F8vlCwHmZVcbifmtHsupwTrrgxRyujbv6nkxLrb\nzObwT0Fcr+M+1ppS3CsHZS1gQEfIWv6JhkiFM+uobnSA9/l1oWcgirM1SyPFZ2y9\n5mc2h7aFx9xMEWYJT6tonS2LtWklRLx2rcM7g+Wq\n-----END CERTIFICATE-----\n\nEND_OF_CA\nchmod 600 \"$caCrt\"\n\nlogMessage \"Fetching second stage installer...\"\ncurlAgentWithoutCerts --data \"templateId=$templateId\" --output \"$installScript\" \"$installUrl\"\nfailIfNotZero \"$?\" 'Problem fetching second stage installer'\nfailIfDoesNotExist \"$installScript\" 'Problem fetching second stage installer'\nlogMessage 'Successfully fetched second stage installer'\n\nlogMessage 'Executing second stage installer...'\nbash \"$installScript\"\n"}, "changed": false}
+2018-05-14 03:41:26,230 p=8950 u=gmonkey |  TASK [shrikeh.jumpcloud : Ensure temp directory exists] ************************
+2018-05-14 03:41:26,230 p=8950 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:17
+2018-05-14 03:41:26,555 p=8950 u=gmonkey |  fatal: [18.196.50.237]: FAILED! => {"changed": false, "failed": true, "gid": 1000, "group": "ubuntu", "mode": "0775", "msg": "chown failed", "owner": "ubuntu", "path": "/tmp/jc_install", "size": 4096, "state": "directory", "uid": 1000}
+2018-05-14 03:41:26,557 p=8950 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 03:41:26,558 p=8950 u=gmonkey |  18.196.50.237              : ok=5    changed=0    unreachable=0    failed=1   
+2018-05-14 03:41:41,733 p=8983 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 03:41:41,821 p=8983 u=gmonkey |  statically included: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml
+2018-05-14 03:41:41,842 p=8983 u=gmonkey |  PLAYBOOK: jumpcloud.yml ********************************************************
+2018-05-14 03:41:41,842 p=8983 u=gmonkey |  1 plays in jumpcloud.yml
+2018-05-14 03:41:41,845 p=8983 u=gmonkey |  PLAY [jumpcloud-clients] *******************************************************
+2018-05-14 03:41:41,870 p=8983 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 03:41:42,400 p=8983 u=gmonkey |  ok: [18.196.50.237]
+2018-05-14 03:41:42,404 p=8983 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 03:41:42,404 p=8983 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:2
+2018-05-14 03:41:42,661 p=8983 u=gmonkey |  ok: [18.196.50.237] => {"changed": false, "stat": {"exists": false}}
+2018-05-14 03:41:42,666 p=8983 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 03:41:42,666 p=8983 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:7
+2018-05-14 03:41:42,693 p=8983 u=gmonkey |  ok: [18.196.50.237] => {"ansible_facts": {"jc_not_installed": true}, "changed": false}
+2018-05-14 03:41:42,697 p=8983 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 03:41:42,697 p=8983 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:2
+2018-05-14 03:41:42,857 p=8983 u=gmonkey |  fatal: [18.196.50.237 -> 127.0.0.1]: FAILED! => {"changed": false, "failed": true, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE"}
+2018-05-14 03:41:42,858 p=8983 u=gmonkey |  NO MORE HOSTS LEFT *************************************************************
+2018-05-14 03:41:42,858 p=8983 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 03:41:42,859 p=8983 u=gmonkey |  18.196.50.237              : ok=3    changed=0    unreachable=0    failed=1   
+2018-05-14 03:42:02,756 p=9003 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 03:42:02,843 p=9003 u=gmonkey |  statically included: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml
+2018-05-14 03:42:02,866 p=9003 u=gmonkey |  PLAYBOOK: jumpcloud.yml ********************************************************
+2018-05-14 03:42:02,866 p=9003 u=gmonkey |  1 plays in jumpcloud.yml
+2018-05-14 03:42:02,869 p=9003 u=gmonkey |  PLAY [jumpcloud-clients] *******************************************************
+2018-05-14 03:42:02,893 p=9003 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 03:42:03,473 p=9003 u=gmonkey |  ok: [18.196.50.237]
+2018-05-14 03:42:03,476 p=9003 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 03:42:03,476 p=9003 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:2
+2018-05-14 03:42:03,770 p=9003 u=gmonkey |  ok: [18.196.50.237] => {"changed": false, "stat": {"exists": false}}
+2018-05-14 03:42:03,773 p=9003 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 03:42:03,774 p=9003 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:7
+2018-05-14 03:42:03,805 p=9003 u=gmonkey |  ok: [18.196.50.237] => {"ansible_facts": {"jc_not_installed": true}, "changed": false}
+2018-05-14 03:42:03,809 p=9003 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 03:42:03,810 p=9003 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:2
+2018-05-14 03:42:03,958 p=9003 u=gmonkey |  fatal: [18.196.50.237 -> 127.0.0.1]: FAILED! => {"changed": false, "failed": true, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE"}
+2018-05-14 03:42:03,959 p=9003 u=gmonkey |  NO MORE HOSTS LEFT *************************************************************
+2018-05-14 03:42:03,960 p=9003 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 03:42:03,961 p=9003 u=gmonkey |  18.196.50.237              : ok=3    changed=0    unreachable=0    failed=1   
+2018-05-14 03:43:06,761 p=9034 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 03:43:06,849 p=9034 u=gmonkey |  statically included: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml
+2018-05-14 03:43:06,873 p=9034 u=gmonkey |  PLAYBOOK: jumpcloud.yml ********************************************************
+2018-05-14 03:43:06,874 p=9034 u=gmonkey |  1 plays in jumpcloud.yml
+2018-05-14 03:43:06,877 p=9034 u=gmonkey |  PLAY [jumpcloud-clients] *******************************************************
+2018-05-14 03:43:06,903 p=9034 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 03:43:07,984 p=9034 u=gmonkey |  ok: [18.196.50.237]
+2018-05-14 03:43:07,988 p=9034 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 03:43:07,988 p=9034 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:2
+2018-05-14 03:43:08,330 p=9034 u=gmonkey |  ok: [18.196.50.237] => {"changed": false, "stat": {"exists": false}}
+2018-05-14 03:43:08,333 p=9034 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 03:43:08,333 p=9034 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:7
+2018-05-14 03:43:08,361 p=9034 u=gmonkey |  ok: [18.196.50.237] => {"ansible_facts": {"jc_not_installed": true}, "changed": false}
+2018-05-14 03:43:08,364 p=9034 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 03:43:08,365 p=9034 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:2
+2018-05-14 03:43:08,527 p=9034 u=gmonkey |  fatal: [18.196.50.237 -> 127.0.0.1]: FAILED! => {"changed": false, "failed": true, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE"}
+2018-05-14 03:43:08,528 p=9034 u=gmonkey |  NO MORE HOSTS LEFT *************************************************************
+2018-05-14 03:43:08,529 p=9034 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 03:43:08,530 p=9034 u=gmonkey |  18.196.50.237              : ok=3    changed=0    unreachable=0    failed=1   
+2018-05-14 03:44:31,654 p=9058 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 03:44:31,743 p=9058 u=gmonkey |  statically included: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml
+2018-05-14 03:44:31,768 p=9058 u=gmonkey |  PLAYBOOK: jumpcloud.yml ********************************************************
+2018-05-14 03:44:31,769 p=9058 u=gmonkey |  1 plays in jumpcloud.yml
+2018-05-14 03:44:31,772 p=9058 u=gmonkey |  PLAY [jumpcloud-clients] *******************************************************
+2018-05-14 03:44:31,797 p=9058 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 03:44:33,104 p=9058 u=gmonkey |  ok: [18.196.50.237]
+2018-05-14 03:44:33,109 p=9058 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 03:44:33,109 p=9058 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:2
+2018-05-14 03:44:33,401 p=9058 u=gmonkey |  ok: [18.196.50.237] => {"changed": false, "stat": {"exists": false}}
+2018-05-14 03:44:33,405 p=9058 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 03:44:33,406 p=9058 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:7
+2018-05-14 03:44:33,434 p=9058 u=gmonkey |  ok: [18.196.50.237] => {"ansible_facts": {"jc_not_installed": true}, "changed": false}
+2018-05-14 03:44:33,438 p=9058 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 03:44:33,439 p=9058 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:2
+2018-05-14 03:44:33,601 p=9058 u=gmonkey |  fatal: [18.196.50.237 -> 127.0.0.1]: FAILED! => {"changed": false, "failed": true, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE"}
+2018-05-14 03:44:33,602 p=9058 u=gmonkey |  NO MORE HOSTS LEFT *************************************************************
+2018-05-14 03:44:33,603 p=9058 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 03:44:33,603 p=9058 u=gmonkey |  18.196.50.237              : ok=3    changed=0    unreachable=0    failed=1   
+2018-05-14 03:45:39,942 p=9121 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 03:45:40,051 p=9121 u=gmonkey |  statically included: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml
+2018-05-14 03:45:40,073 p=9121 u=gmonkey |  PLAYBOOK: jumpcloud.yml ********************************************************
+2018-05-14 03:45:40,073 p=9121 u=gmonkey |  1 plays in jumpcloud.yml
+2018-05-14 03:45:40,076 p=9121 u=gmonkey |  PLAY [jumpcloud-clients] *******************************************************
+2018-05-14 03:45:40,100 p=9121 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 03:45:41,269 p=9121 u=gmonkey |  ok: [18.196.50.237]
+2018-05-14 03:45:41,272 p=9121 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 03:45:41,272 p=9121 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:2
+2018-05-14 03:45:41,618 p=9121 u=gmonkey |  ok: [18.196.50.237] => {"changed": false, "stat": {"exists": false}}
+2018-05-14 03:45:41,621 p=9121 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 03:45:41,621 p=9121 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:7
+2018-05-14 03:45:41,649 p=9121 u=gmonkey |  ok: [18.196.50.237] => {"ansible_facts": {"jc_not_installed": true}, "changed": false}
+2018-05-14 03:45:41,652 p=9121 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 03:45:41,653 p=9121 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:2
+2018-05-14 03:45:41,807 p=9121 u=gmonkey |  fatal: [18.196.50.237 -> 127.0.0.1]: FAILED! => {"changed": false, "failed": true, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE"}
+2018-05-14 03:45:41,808 p=9121 u=gmonkey |  NO MORE HOSTS LEFT *************************************************************
+2018-05-14 03:45:41,809 p=9121 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 03:45:41,809 p=9121 u=gmonkey |  18.196.50.237              : ok=3    changed=0    unreachable=0    failed=1   
+2018-05-14 03:45:46,583 p=9144 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 03:45:48,896 p=9144 u=gmonkey |  statically included: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml
+2018-05-14 03:45:48,919 p=9144 u=gmonkey |  PLAYBOOK: jumpcloud.yml ********************************************************
+2018-05-14 03:45:48,920 p=9144 u=gmonkey |  1 plays in jumpcloud.yml
+2018-05-14 03:45:48,923 p=9144 u=gmonkey |  PLAY [jumpcloud-clients] *******************************************************
+2018-05-14 03:45:48,948 p=9144 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 03:45:49,596 p=9144 u=gmonkey |  ok: [18.196.50.237]
+2018-05-14 03:45:49,600 p=9144 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 03:45:49,601 p=9144 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:2
+2018-05-14 03:45:49,896 p=9144 u=gmonkey |  ok: [18.196.50.237] => {"changed": false, "stat": {"exists": false}}
+2018-05-14 03:45:49,900 p=9144 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 03:45:49,901 p=9144 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:7
+2018-05-14 03:45:49,928 p=9144 u=gmonkey |  ok: [18.196.50.237] => {"ansible_facts": {"jc_not_installed": true}, "changed": false}
+2018-05-14 03:45:49,931 p=9144 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 03:45:49,932 p=9144 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:2
+2018-05-14 03:45:50,090 p=9144 u=gmonkey |  fatal: [18.196.50.237 -> 127.0.0.1]: FAILED! => {"changed": false, "failed": true, "module_stderr": "sudo: a password is required\n", "module_stdout": "", "msg": "MODULE FAILURE"}
+2018-05-14 03:45:50,091 p=9144 u=gmonkey |  NO MORE HOSTS LEFT *************************************************************
+2018-05-14 03:45:50,092 p=9144 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 03:45:50,093 p=9144 u=gmonkey |  18.196.50.237              : ok=3    changed=0    unreachable=0    failed=1   
+2018-05-14 03:46:17,163 p=9165 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 03:46:20,685 p=9165 u=gmonkey |  statically included: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml
+2018-05-14 03:46:20,708 p=9165 u=gmonkey |  PLAYBOOK: jumpcloud.yml ********************************************************
+2018-05-14 03:46:20,709 p=9165 u=gmonkey |  1 plays in jumpcloud.yml
+2018-05-14 03:46:20,712 p=9165 u=gmonkey |  PLAY [jumpcloud-clients] *******************************************************
+2018-05-14 03:46:20,739 p=9165 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 03:46:21,357 p=9165 u=gmonkey |  ok: [18.196.50.237]
+2018-05-14 03:46:21,360 p=9165 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 03:46:21,361 p=9165 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:2
+2018-05-14 03:46:21,997 p=9165 u=gmonkey |  ok: [18.196.50.237] => {"changed": false, "stat": {"exists": false}}
+2018-05-14 03:46:22,000 p=9165 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 03:46:22,001 p=9165 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:7
+2018-05-14 03:46:22,027 p=9165 u=gmonkey |  ok: [18.196.50.237] => {"ansible_facts": {"jc_not_installed": true}, "changed": false}
+2018-05-14 03:46:22,031 p=9165 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 03:46:22,031 p=9165 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:2
+2018-05-14 03:46:28,521 p=9165 u=gmonkey |  fatal: [18.196.50.237 -> 127.0.0.1]: FAILED! => {"changed": false, "failed": true, "module_stderr": "Sorry, try again.\n[sudo via ansible, key=gqrthrmipstvfyzbppppybvnuklsfyqg] password: Sorry, try again.\n[sudo via ansible, key=gqrthrmipstvfyzbppppybvnuklsfyqg] password: sudo: 3 incorrect password attempts\n", "module_stdout": "", "msg": "MODULE FAILURE"}
+2018-05-14 03:46:28,522 p=9165 u=gmonkey |  NO MORE HOSTS LEFT *************************************************************
+2018-05-14 03:46:28,523 p=9165 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 03:46:28,523 p=9165 u=gmonkey |  18.196.50.237              : ok=3    changed=0    unreachable=0    failed=1   
+2018-05-14 03:48:10,067 p=9188 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 03:48:10,158 p=9188 u=gmonkey |  statically included: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml
+2018-05-14 03:48:10,178 p=9188 u=gmonkey |  PLAYBOOK: jumpcloud.yml ********************************************************
+2018-05-14 03:48:10,179 p=9188 u=gmonkey |  1 plays in jumpcloud.yml
+2018-05-14 03:48:10,181 p=9188 u=gmonkey |  PLAY [jumpcloud-clients] *******************************************************
+2018-05-14 03:48:10,205 p=9188 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 03:48:11,208 p=9188 u=gmonkey |  ok: [18.196.50.237]
+2018-05-14 03:48:11,212 p=9188 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 03:48:11,212 p=9188 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:2
+2018-05-14 03:48:11,569 p=9188 u=gmonkey |  ok: [18.196.50.237] => {"changed": false, "stat": {"exists": false}}
+2018-05-14 03:48:11,574 p=9188 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 03:48:11,574 p=9188 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:7
+2018-05-14 03:48:11,601 p=9188 u=gmonkey |  ok: [18.196.50.237] => {"ansible_facts": {"jc_not_installed": true}, "changed": false}
+2018-05-14 03:48:11,604 p=9188 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 03:48:11,605 p=9188 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:2
+2018-05-14 03:48:12,628 p=9188 u=gmonkey |  ok: [18.196.50.237] => {"cache_control": "no-store", "changed": false, "connection": "close", "content": "#!/bin/bash\n\nLOGFILE=\"/opt/jc/jcagentInstall.log\"\nPATH='/sbin:/bin:/usr/sbin:/usr/bin'\n\nagentInstallDir='/opt/jc/'\nclientKeyName='client.key'\nclientCrtName='client.crt'\ncaCrtName='ca.crt'\nconnectKey='1f42e80023dfc11a4a69dbfa52c92570101caad4'\n\nclientKey=\"$agentInstallDir/$clientKeyName\"\nclientCrt=\"$agentInstallDir/$clientCrtName\"\ncaCrt=\"$agentInstallDir/$caCrtName\"\ninstallScript=\"$agentInstallDir/agentInstall.sh\"\n\nproxyFile=\"/etc/jcagent-proxy.conf\"\n\nif [ -r \"${proxyFile}\" ]\nthen\n  export http_proxy=\"`cat ${proxyFile}`\"\n  export https_proxy=\"`cat ${proxyFile}`\"\nfi\n\n\nlogMessage() {\n    local msg=\"$(date -u): $1\"\n    echo \"$msg\" &> 2\n    echo \"$msg\" >> $LOGFILE\n}\n\nfailWithMessage() {\n    logMessage \"$1\"\n    logMessage \"It appears your agent installation has failed. Please contact support@jumpcloud.com.\"\n    exit 1\n}\n\n\nprintMessageIfNotZero() {\n  if [ \"$1\" != '0' ]; then\n    logMessage \"$2\"\n  fi\n}\nfailIfNotZero() {\n    if [ \"$1\" != '0' ]; then\n        failWithMessage \"$2\"\n    fi\n}\n\nfailIfDoesNotExist() {\n    if [ ! -e \"$1\" ]; then\n        failWithMessage \"$2\"\n    fi\n}\n\nsetTimeIfIncorrect() {\n  local ERRMSG=\"$2\"\n  if [ \"$1\" != '0' ]; then\n    checkFor 'ntpdate'\n    local CMDRES=\"$?\"\n    if [ \"$CMDRES\" != '0' ]; then\n      failWithMessage \"$ERRMSG\"\n    else\n      logMessage \"$2\"\n      ntpdate -u pool.ntp.org\n      localTime=\"$(date +%s)\"\n      curlAgentWithoutCerts --data \"time=$localTime\" \"$timeUrl\"\n      local CURLRES=\"$?\"\n      printMessageIfNotZero \"$CURLRES\" \"Problem setting time with ntpdate\"\n      failIfNotZero \"$CURLRES\" \"$ERRMSG\"\n    fi\n  fi\n}\ncheckFor() {\n    type \"$1\" >/dev/null 2>&1\n}\n\nfailIfCommandNotFound() {\n    checkFor \"$1\"\n    failIfNotZero \"$?\" \"Necessary command not found: '$1'\"\n}\n\ncurlAgentWithoutCerts() {\n    attempts=3\n  delay=3\n    n=0\n    until curl --silent --show-error --fail --header \"X-Connect-Key: $connectKey\" \"$@\"; do\n        ret=$?\n        n=$[$n+1]\n        if [ \"$n\" -ge \"$attempts\" ]; then\n            logMessage \"Failed curl ($n of $attempts), quitting ...\"\n            return $ret\n        else\n            logMessage \"Failed curl ($n of $attempts), retrying after delay ...\"\n            sleep $delay\n        fi\n    done\n    return $?\n}\n\nfailIfCommandNotFound id\nif [ \"$(id -u)\" != '0' ]; then\n    failWithMessage 'Script must be run as root (or with sudo)'\nfi\n\nfailIfCommandNotFound mkdir\nfailIfCommandNotFound chmod\nmkdir -p \"$agentInstallDir/bin\"\nchmod 700 \"$agentInstallDir\"\n\npublicUrlBase='https://kickstart.jumpcloud.com'\nprivateUrlBase='https://private-kickstart.jumpcloud.com'\n\ndetectUrl=\"$publicUrlBase/Detect\"\ntimeUrl=\"$publicUrlBase/Time\"\ninstallUrl=\"$publicUrlBase/GetAgentInstall\"\n\ntemplateFile=\"$agentInstallDir/templateId\"\nclientCsr=\"$agentInstallDir/client.csr\"\n\nbootstrapFile=\"/opt/jc//agentBootstrap.json\"\n\n# Write the bootstrap file to allow for resealing\nmkdir -p \"/opt/jc/\"\ncat <<-EOF >\"${bootstrapFile}\"\n    {\n       \"publicKickstartUrl\": \"https://kickstart.jumpcloud.com\",\n       \"privateKickstartUrl\": \"https://private-kickstart.jumpcloud.com\",\n       \"connectKey\": \"1f42e80023dfc11a4a69dbfa52c92570101caad4\"\n    }\nEOF\n\nif grep -q Debian /etc/issue; then # force curl install for debian\n  apt-get install curl -y\nfi\n\nlogMessage \"Starting agent install, connectKey=$connectKey\"\n\nlogMessage 'Checking for necessary install commands...'\nnotFoundCommands=''\nfor command in bash cat date grep head openssl rm uname tee; do\n    checkFor \"$command\"\n    if [ \"$?\" != '0' ]; then\n        notFoundCommands=\"$notFoundCommands $command\"\n    fi\ndone\nif [ -n \"$notFoundCommands\" ]; then\n    failWithMessage \"Missing necessary install commands: $notFoundCommands\"\nelse\n    logMessage 'Necessary install commands found'\nfi\n\nlogMessage 'Checking system compatibility...'\narch=\"$(uname -m)\"\nif [ -f /etc/system-release ]; then\n    logMessage \"Getting OS info from /etc/system-release\"\n    os=\"$(head -n 1 /etc/system-release)\"\nelse\n    logMessage \"Getting OS info from /etc/issue\"\n    os=\"$(head -n 1 /etc/issue)\"\nfi\ncurlAgentWithoutCerts --data \"arch=$arch&os=$os\" --output \"$templateFile\" \"$detectUrl\"\nif [ \"$?\" != '0' ] || [ ! -f \"$templateFile\" ]; then\n    failWithMessage \"Your OS/architecture [$os/$arch] is not supported. Please visit https://support.jumpcloud.com/customer/portal/articles/2390451-jumpcloud-agent-compatibility-and-system-impacts for a list of supported systems.\"\nfi\nlogMessage 'System is supported'\ntemplateId=\"$(cat \"$templateFile\")\"\nrm -f \"$templateFile\"\n\nlogMessage 'Checking local system time...'\nlocalTime=\"$(date +%s)\"\ncurlAgentWithoutCerts --data \"time=$localTime\" \"$timeUrl\"\nsetTimeIfIncorrect \"$?\" \"Your system time seems inaccurate. Please ensure your system is set to the correct time by running ntpdate ('ntpdate -u pool.ntp.org') or verifying that ntpd is configured properly.\"\nlocalTime=\"$(date +%s)\"\nlogMessage 'System time is accurate'\n\ncat >\"$caCrt\" <<END_OF_CA\n-----BEGIN CERTIFICATE-----\nMIIF7zCCA9egAwIBAgICEAMwDQYJKoZIhvcNAQELBQAwgYExCzAJBgNVBAYTAlVT\nMREwDwYDVQQIDAhDb2xvcmFkbzESMBAGA1UECgwJSnVtcENsb3VkMR4wHAYDVQQL\nDBVKdW1wQ2xvdWQgRW5naW5lZXJpbmcxKzApBgNVBAMMIkp1bXBDbG91ZCBQcm9k\ndWN0aW9uIEFnZW50IFJvb3QgQ0EwHhcNMTcxMDI0MTY0ODQwWhcNMjcxMDIyMTY0\nODQwWjCBijELMAkGA1UEBhMCVVMxETAPBgNVBAgMCENvbG9yYWRvMRIwEAYDVQQK\nDAlKdW1wQ2xvdWQxHjAcBgNVBAsMFUp1bXBDbG91ZCBFbmdpbmVlcmluZzE0MDIG\nA1UEAwwrSnVtcENsb3VkIFByb2R1Y3Rpb24gQWdlbnQgU2VydmVyIElzc3VlciBD\nQTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAOIkU+shzb15SAdBcrJe\nBbD/Y6WCyOLYTvoJbSWzKeqMZ9yuyX5FgQq/eHrqYjD4NBqROB8IzoH1ipKt6CTv\nLvN2cH8WNdJvHUN45oH+mleNlK8zH227PiWHxduxnjiPpejV1ogF/Tagnm7HQM/M\n8CVILYMAm4B1K6i0BRJjByykjGqk849tWXhh8N8NkMh79QDTxFH8WRTaLfIWhXQL\nruD+IDyRUkvJyuMmjhdkaoqWDHvY4V+iMPQ2UOb1VME0Q1MFoFq/V1LNmaN9ZTPZ\nzd+YzwIkYuV8+tKsOCV/xToZqclID7dUoezrddN0tTrAT8/EO/L4v9EObDsi5pl/\nAQtoSBmW0gZC9HflJgyOXO8bvawQLjpx/8sOEr+9KfPWtmZ5o6/46GeVnMtuivV4\nMK0W3CdQL/NcpoZWkX/fr4xFR4HNrL6bOgIKgPw0iVS7RwRNjiauGkIxV8yO9ZIZ\nqlhlQc2TG8SaU1l0lLEdC/Bs+zC4J0dw3Y2YQU8p3XNFG9scfqAYDSz6zVgWbuvh\n/ZNHpeizQnLDI/COFpvuWociUplV/K0yRgA/5fLTBuy8r6lLVFjaYE3Q7we0lPzD\n1D5fQmMBzPa4GfI5EztUOuX5yLY5nW5TawghBdT0yUbJehMJoa7IvNLIT8uY/wHJ\nin+3ggS4DFicoej9mzQbs3+RAgMBAAGjZjBkMB0GA1UdDgQWBBS6i5csdoEOdTr9\n4TnRlEijTt47VDAfBgNVHSMEGDAWgBSz/gXD3CxSjikrGmDvLjI1a0VxJzASBgNV\nHRMBAf8ECDAGAQH/AgEAMA4GA1UdDwEB/wQEAwIBhjANBgkqhkiG9w0BAQsFAAOC\nAgEAMWy5DHMVHJr70HAaJP+wQiqr8YiwNo0FhWewNbWbtr2tb+7+iKLftRJOBbEN\nfFcBdEFuj5YkbISIgUoyOJwl95403YQSHlRROqLewRG1vaRvNi+IfrHXFsSlZuHq\nNTet3PfkLLCVpmWJCtMhKUG3EBkb24TqINgfEChHaWiVeXgNCeXdVpKUBGbxVdZ8\nIM/2cSb5951VK9Da09xzfpeX5hDQGuzSD9QkOtXeg27G5Fex3oRvmAGxegU+LLPM\nzhBkju9IaRbe/f6bPPyFHagwNv9bSa9YjYS0VsPhv9mgTG0TNHsJUicOpNxkW3jv\nimuVlanQvKjlCWYmZPswHKP3+V4vI4pO9gOfzrKKGjQ33/Z2sG6KmIbMqMol9Sae\nwsb+W2gOzdbqqi8nT5pEyk8LjE6NiSXDooNtEsCBLGbQ5kMjzpPrMwJOdmnPWEdm\ngmeSYDilvemsBZTFY8Ay1JSXK61aOlJW1e4LVWbz22HSRvCPqyedG7ar7gL32oIy\n2hx2rE9lNf1MSIOAhK5g/i3ijFUv54/EMWqabVxPFDGQUozuMvDq4ztUI+3Af0LG\nAhNDkCkdnwvQtWCjxFmHNvq1MimXm3A4kcLseb/fho6FMLGP2g8Rh8HxKz1kRCXC\nYX66zt9AUMZr1z0m+saxo/aGO7jRYrSG9sZANwK11ZY269o=\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIF6jCCA9KgAwIBAgIJAJBXUsJ+UkXfMA0GCSqGSIb3DQEBCwUAMIGBMQswCQYD\nVQQGEwJVUzERMA8GA1UECAwIQ29sb3JhZG8xEjAQBgNVBAoMCUp1bXBDbG91ZDEe\nMBwGA1UECwwVSnVtcENsb3VkIEVuZ2luZWVyaW5nMSswKQYDVQQDDCJKdW1wQ2xv\ndWQgUHJvZHVjdGlvbiBBZ2VudCBSb290IENBMB4XDTE3MTAyNDE2NDgzOVoXDTM3\nMTAxOTE2NDgzOVowgYExCzAJBgNVBAYTAlVTMREwDwYDVQQIDAhDb2xvcmFkbzES\nMBAGA1UECgwJSnVtcENsb3VkMR4wHAYDVQQLDBVKdW1wQ2xvdWQgRW5naW5lZXJp\nbmcxKzApBgNVBAMMIkp1bXBDbG91ZCBQcm9kdWN0aW9uIEFnZW50IFJvb3QgQ0Ew\nggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDrAqUlYdvN55qrR8E0CE41\nbE38dsB+Ca1Umgl+N3RENJEIjkZx17yFHbXpmIufrX2MdvXo1eD1G5Y2DsCzL3AK\nmqOuX20mRVQ+0yLzYsyF87QXzjP6wLPY4JAsQUtcEeogkmNf+mpUBGu2s9P0Csse\nB499Lk6Xy/F4iPez+xTIrgd0+mmrPTbgQK5Uegmb22SxYZadZ8rVJeTjL8iTdj80\nGcFS6R94vmRejcVgnz4XFok72lJqSyB1rbPtS5uhmN4BDxQRQ1qeBtET9Eh58n+9\n15aqxSyojWyHHAZ7GFPqIyai+TX8YQ1OyRjalEzJFJLvpCkNt4T43RcCEitRF0fD\nrqHTULUSq7aagJmJPezkE+1IIVZOnmp1QMvFLA06NViGrbbZAiHyW1S4JH8mNLgv\nb/Qw2fexad1q4zOFPEG5rgBe/THuVRgtxvLlE9pE0cFz0rRsPWdtNwlpZX1tIZm2\nUeaZZg7lqf8WfgDpX8Rtko+9qXfhYFU+A0haqqzDXjIuqeoaLo9UqOgzjN4lUU4/\nzmg7NPCjFmDTGH864zgw7H3cGU3c2cae+JPSxPuDQdGMoV+EmOfwGrq1p7Ekjs3y\nvtPmfVsbGedpq2kPbKC33RT2/NieUyv2K+MiWif6gG5vNUzMU1KQ51297AfXuO06\nrA4snhNJ5OoduxKyVkVeZQIDAQABo2MwYTAdBgNVHQ4EFgQUs/4Fw9wsUo4pKxpg\n7y4yNWtFcScwHwYDVR0jBBgwFoAUs/4Fw9wsUo4pKxpg7y4yNWtFcScwDwYDVR0T\nAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAYYwDQYJKoZIhvcNAQELBQADggIBADWy\n5lLLJK0Kpi+p0daQ+X4jfo5A7++8X3CLXldLgN2w29OcnuCSLGx+rZnGT2PqLtjo\nPIJD8HgRRXkEfi0EL2tZkWvs+aBh7Io6yAnJRxPdZcXcZvCi8meicqxH95YZY84L\ncZkaj/+rzOw8XRmT8iFbSanImDTN8QbG/OZHgTi0r8bUKsW0HC6IcmPaOxraL5RY\nt6cTeXf5Fhwa+4YjX2mgFYvNuDTRTAJQEUeL6dXXP45cZTuQSazWodogDocN5eiB\nfAV53r7xY5YtWxbluTLBSblDOuRF4kUhDVeoSL0yNNOy7K9QYlM3edQVSaXxmwzD\nQILBlAwhbPoNwRLliqDybR3ldQf+eQjtnGby0yPQjoroyVdk5so7UJZ+KlkuJScu\nSbyaj+aac9jOBVakVWjMqCw1HmWggIoapO1h13WNDVUlcORPseDwbspSDTrdVnen\nw8TeiciUOBaPmf0+gDiJTK9y166sL8JWkX3qITh51G9j06vmII4BXUgDWZg4O3Vx\nzu3OJdurELqQZc+pbxCahv8M5F8vlCwHmZVcbifmtHsupwTrrgxRyujbv6nkxLrb\nzObwT0Fcr+M+1ppS3CsHZS1gQEfIWv6JhkiFM+uobnSA9/l1oWcgirM1SyPFZ2y9\n5mc2h7aFx9xMEWYJT6tonS2LtWklRLx2rcM7g+Wq\n-----END CERTIFICATE-----\n\nEND_OF_CA\nchmod 600 \"$caCrt\"\n\nlogMessage \"Fetching second stage installer...\"\ncurlAgentWithoutCerts --data \"templateId=$templateId\" --output \"$installScript\" \"$installUrl\"\nfailIfNotZero \"$?\" 'Problem fetching second stage installer'\nfailIfDoesNotExist \"$installScript\" 'Problem fetching second stage installer'\nlogMessage 'Successfully fetched second stage installer'\n\nlogMessage 'Executing second stage installer...'\nbash \"$installScript\"\n", "content_length": "9540", "content_type": "text/plain", "date": "Sun, 13 May 2018 19:48:12 GMT", "etag": "\"-1746897123\"", "msg": "OK (9540 bytes)", "pragma": "no-cache", "redirected": false, "server": "nginx", "status": 200, "url": "https://kickstart.jumpcloud.com/Kickstart"}
+2018-05-14 03:48:12,632 p=9188 u=gmonkey |  TASK [shrikeh.jumpcloud : Register the install script output as a variable] ****
+2018-05-14 03:48:12,632 p=9188 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:12
+2018-05-14 03:48:12,666 p=9188 u=gmonkey |  ok: [18.196.50.237] => {"ansible_facts": {"jumpcloud_install_script_contents": "#!/bin/bash\n\nLOGFILE=\"/opt/jc/jcagentInstall.log\"\nPATH='/sbin:/bin:/usr/sbin:/usr/bin'\n\nagentInstallDir='/opt/jc/'\nclientKeyName='client.key'\nclientCrtName='client.crt'\ncaCrtName='ca.crt'\nconnectKey='1f42e80023dfc11a4a69dbfa52c92570101caad4'\n\nclientKey=\"$agentInstallDir/$clientKeyName\"\nclientCrt=\"$agentInstallDir/$clientCrtName\"\ncaCrt=\"$agentInstallDir/$caCrtName\"\ninstallScript=\"$agentInstallDir/agentInstall.sh\"\n\nproxyFile=\"/etc/jcagent-proxy.conf\"\n\nif [ -r \"${proxyFile}\" ]\nthen\n  export http_proxy=\"`cat ${proxyFile}`\"\n  export https_proxy=\"`cat ${proxyFile}`\"\nfi\n\n\nlogMessage() {\n    local msg=\"$(date -u): $1\"\n    echo \"$msg\" &> 2\n    echo \"$msg\" >> $LOGFILE\n}\n\nfailWithMessage() {\n    logMessage \"$1\"\n    logMessage \"It appears your agent installation has failed. Please contact support@jumpcloud.com.\"\n    exit 1\n}\n\n\nprintMessageIfNotZero() {\n  if [ \"$1\" != '0' ]; then\n    logMessage \"$2\"\n  fi\n}\nfailIfNotZero() {\n    if [ \"$1\" != '0' ]; then\n        failWithMessage \"$2\"\n    fi\n}\n\nfailIfDoesNotExist() {\n    if [ ! -e \"$1\" ]; then\n        failWithMessage \"$2\"\n    fi\n}\n\nsetTimeIfIncorrect() {\n  local ERRMSG=\"$2\"\n  if [ \"$1\" != '0' ]; then\n    checkFor 'ntpdate'\n    local CMDRES=\"$?\"\n    if [ \"$CMDRES\" != '0' ]; then\n      failWithMessage \"$ERRMSG\"\n    else\n      logMessage \"$2\"\n      ntpdate -u pool.ntp.org\n      localTime=\"$(date +%s)\"\n      curlAgentWithoutCerts --data \"time=$localTime\" \"$timeUrl\"\n      local CURLRES=\"$?\"\n      printMessageIfNotZero \"$CURLRES\" \"Problem setting time with ntpdate\"\n      failIfNotZero \"$CURLRES\" \"$ERRMSG\"\n    fi\n  fi\n}\ncheckFor() {\n    type \"$1\" >/dev/null 2>&1\n}\n\nfailIfCommandNotFound() {\n    checkFor \"$1\"\n    failIfNotZero \"$?\" \"Necessary command not found: '$1'\"\n}\n\ncurlAgentWithoutCerts() {\n    attempts=3\n  delay=3\n    n=0\n    until curl --silent --show-error --fail --header \"X-Connect-Key: $connectKey\" \"$@\"; do\n        ret=$?\n        n=$[$n+1]\n        if [ \"$n\" -ge \"$attempts\" ]; then\n            logMessage \"Failed curl ($n of $attempts), quitting ...\"\n            return $ret\n        else\n            logMessage \"Failed curl ($n of $attempts), retrying after delay ...\"\n            sleep $delay\n        fi\n    done\n    return $?\n}\n\nfailIfCommandNotFound id\nif [ \"$(id -u)\" != '0' ]; then\n    failWithMessage 'Script must be run as root (or with sudo)'\nfi\n\nfailIfCommandNotFound mkdir\nfailIfCommandNotFound chmod\nmkdir -p \"$agentInstallDir/bin\"\nchmod 700 \"$agentInstallDir\"\n\npublicUrlBase='https://kickstart.jumpcloud.com'\nprivateUrlBase='https://private-kickstart.jumpcloud.com'\n\ndetectUrl=\"$publicUrlBase/Detect\"\ntimeUrl=\"$publicUrlBase/Time\"\ninstallUrl=\"$publicUrlBase/GetAgentInstall\"\n\ntemplateFile=\"$agentInstallDir/templateId\"\nclientCsr=\"$agentInstallDir/client.csr\"\n\nbootstrapFile=\"/opt/jc//agentBootstrap.json\"\n\n# Write the bootstrap file to allow for resealing\nmkdir -p \"/opt/jc/\"\ncat <<-EOF >\"${bootstrapFile}\"\n    {\n       \"publicKickstartUrl\": \"https://kickstart.jumpcloud.com\",\n       \"privateKickstartUrl\": \"https://private-kickstart.jumpcloud.com\",\n       \"connectKey\": \"1f42e80023dfc11a4a69dbfa52c92570101caad4\"\n    }\nEOF\n\nif grep -q Debian /etc/issue; then # force curl install for debian\n  apt-get install curl -y\nfi\n\nlogMessage \"Starting agent install, connectKey=$connectKey\"\n\nlogMessage 'Checking for necessary install commands...'\nnotFoundCommands=''\nfor command in bash cat date grep head openssl rm uname tee; do\n    checkFor \"$command\"\n    if [ \"$?\" != '0' ]; then\n        notFoundCommands=\"$notFoundCommands $command\"\n    fi\ndone\nif [ -n \"$notFoundCommands\" ]; then\n    failWithMessage \"Missing necessary install commands: $notFoundCommands\"\nelse\n    logMessage 'Necessary install commands found'\nfi\n\nlogMessage 'Checking system compatibility...'\narch=\"$(uname -m)\"\nif [ -f /etc/system-release ]; then\n    logMessage \"Getting OS info from /etc/system-release\"\n    os=\"$(head -n 1 /etc/system-release)\"\nelse\n    logMessage \"Getting OS info from /etc/issue\"\n    os=\"$(head -n 1 /etc/issue)\"\nfi\ncurlAgentWithoutCerts --data \"arch=$arch&os=$os\" --output \"$templateFile\" \"$detectUrl\"\nif [ \"$?\" != '0' ] || [ ! -f \"$templateFile\" ]; then\n    failWithMessage \"Your OS/architecture [$os/$arch] is not supported. Please visit https://support.jumpcloud.com/customer/portal/articles/2390451-jumpcloud-agent-compatibility-and-system-impacts for a list of supported systems.\"\nfi\nlogMessage 'System is supported'\ntemplateId=\"$(cat \"$templateFile\")\"\nrm -f \"$templateFile\"\n\nlogMessage 'Checking local system time...'\nlocalTime=\"$(date +%s)\"\ncurlAgentWithoutCerts --data \"time=$localTime\" \"$timeUrl\"\nsetTimeIfIncorrect \"$?\" \"Your system time seems inaccurate. Please ensure your system is set to the correct time by running ntpdate ('ntpdate -u pool.ntp.org') or verifying that ntpd is configured properly.\"\nlocalTime=\"$(date +%s)\"\nlogMessage 'System time is accurate'\n\ncat >\"$caCrt\" <<END_OF_CA\n-----BEGIN CERTIFICATE-----\nMIIF7zCCA9egAwIBAgICEAMwDQYJKoZIhvcNAQELBQAwgYExCzAJBgNVBAYTAlVT\nMREwDwYDVQQIDAhDb2xvcmFkbzESMBAGA1UECgwJSnVtcENsb3VkMR4wHAYDVQQL\nDBVKdW1wQ2xvdWQgRW5naW5lZXJpbmcxKzApBgNVBAMMIkp1bXBDbG91ZCBQcm9k\ndWN0aW9uIEFnZW50IFJvb3QgQ0EwHhcNMTcxMDI0MTY0ODQwWhcNMjcxMDIyMTY0\nODQwWjCBijELMAkGA1UEBhMCVVMxETAPBgNVBAgMCENvbG9yYWRvMRIwEAYDVQQK\nDAlKdW1wQ2xvdWQxHjAcBgNVBAsMFUp1bXBDbG91ZCBFbmdpbmVlcmluZzE0MDIG\nA1UEAwwrSnVtcENsb3VkIFByb2R1Y3Rpb24gQWdlbnQgU2VydmVyIElzc3VlciBD\nQTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAOIkU+shzb15SAdBcrJe\nBbD/Y6WCyOLYTvoJbSWzKeqMZ9yuyX5FgQq/eHrqYjD4NBqROB8IzoH1ipKt6CTv\nLvN2cH8WNdJvHUN45oH+mleNlK8zH227PiWHxduxnjiPpejV1ogF/Tagnm7HQM/M\n8CVILYMAm4B1K6i0BRJjByykjGqk849tWXhh8N8NkMh79QDTxFH8WRTaLfIWhXQL\nruD+IDyRUkvJyuMmjhdkaoqWDHvY4V+iMPQ2UOb1VME0Q1MFoFq/V1LNmaN9ZTPZ\nzd+YzwIkYuV8+tKsOCV/xToZqclID7dUoezrddN0tTrAT8/EO/L4v9EObDsi5pl/\nAQtoSBmW0gZC9HflJgyOXO8bvawQLjpx/8sOEr+9KfPWtmZ5o6/46GeVnMtuivV4\nMK0W3CdQL/NcpoZWkX/fr4xFR4HNrL6bOgIKgPw0iVS7RwRNjiauGkIxV8yO9ZIZ\nqlhlQc2TG8SaU1l0lLEdC/Bs+zC4J0dw3Y2YQU8p3XNFG9scfqAYDSz6zVgWbuvh\n/ZNHpeizQnLDI/COFpvuWociUplV/K0yRgA/5fLTBuy8r6lLVFjaYE3Q7we0lPzD\n1D5fQmMBzPa4GfI5EztUOuX5yLY5nW5TawghBdT0yUbJehMJoa7IvNLIT8uY/wHJ\nin+3ggS4DFicoej9mzQbs3+RAgMBAAGjZjBkMB0GA1UdDgQWBBS6i5csdoEOdTr9\n4TnRlEijTt47VDAfBgNVHSMEGDAWgBSz/gXD3CxSjikrGmDvLjI1a0VxJzASBgNV\nHRMBAf8ECDAGAQH/AgEAMA4GA1UdDwEB/wQEAwIBhjANBgkqhkiG9w0BAQsFAAOC\nAgEAMWy5DHMVHJr70HAaJP+wQiqr8YiwNo0FhWewNbWbtr2tb+7+iKLftRJOBbEN\nfFcBdEFuj5YkbISIgUoyOJwl95403YQSHlRROqLewRG1vaRvNi+IfrHXFsSlZuHq\nNTet3PfkLLCVpmWJCtMhKUG3EBkb24TqINgfEChHaWiVeXgNCeXdVpKUBGbxVdZ8\nIM/2cSb5951VK9Da09xzfpeX5hDQGuzSD9QkOtXeg27G5Fex3oRvmAGxegU+LLPM\nzhBkju9IaRbe/f6bPPyFHagwNv9bSa9YjYS0VsPhv9mgTG0TNHsJUicOpNxkW3jv\nimuVlanQvKjlCWYmZPswHKP3+V4vI4pO9gOfzrKKGjQ33/Z2sG6KmIbMqMol9Sae\nwsb+W2gOzdbqqi8nT5pEyk8LjE6NiSXDooNtEsCBLGbQ5kMjzpPrMwJOdmnPWEdm\ngmeSYDilvemsBZTFY8Ay1JSXK61aOlJW1e4LVWbz22HSRvCPqyedG7ar7gL32oIy\n2hx2rE9lNf1MSIOAhK5g/i3ijFUv54/EMWqabVxPFDGQUozuMvDq4ztUI+3Af0LG\nAhNDkCkdnwvQtWCjxFmHNvq1MimXm3A4kcLseb/fho6FMLGP2g8Rh8HxKz1kRCXC\nYX66zt9AUMZr1z0m+saxo/aGO7jRYrSG9sZANwK11ZY269o=\n-----END CERTIFICATE-----\n-----BEGIN CERTIFICATE-----\nMIIF6jCCA9KgAwIBAgIJAJBXUsJ+UkXfMA0GCSqGSIb3DQEBCwUAMIGBMQswCQYD\nVQQGEwJVUzERMA8GA1UECAwIQ29sb3JhZG8xEjAQBgNVBAoMCUp1bXBDbG91ZDEe\nMBwGA1UECwwVSnVtcENsb3VkIEVuZ2luZWVyaW5nMSswKQYDVQQDDCJKdW1wQ2xv\ndWQgUHJvZHVjdGlvbiBBZ2VudCBSb290IENBMB4XDTE3MTAyNDE2NDgzOVoXDTM3\nMTAxOTE2NDgzOVowgYExCzAJBgNVBAYTAlVTMREwDwYDVQQIDAhDb2xvcmFkbzES\nMBAGA1UECgwJSnVtcENsb3VkMR4wHAYDVQQLDBVKdW1wQ2xvdWQgRW5naW5lZXJp\nbmcxKzApBgNVBAMMIkp1bXBDbG91ZCBQcm9kdWN0aW9uIEFnZW50IFJvb3QgQ0Ew\nggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDrAqUlYdvN55qrR8E0CE41\nbE38dsB+Ca1Umgl+N3RENJEIjkZx17yFHbXpmIufrX2MdvXo1eD1G5Y2DsCzL3AK\nmqOuX20mRVQ+0yLzYsyF87QXzjP6wLPY4JAsQUtcEeogkmNf+mpUBGu2s9P0Csse\nB499Lk6Xy/F4iPez+xTIrgd0+mmrPTbgQK5Uegmb22SxYZadZ8rVJeTjL8iTdj80\nGcFS6R94vmRejcVgnz4XFok72lJqSyB1rbPtS5uhmN4BDxQRQ1qeBtET9Eh58n+9\n15aqxSyojWyHHAZ7GFPqIyai+TX8YQ1OyRjalEzJFJLvpCkNt4T43RcCEitRF0fD\nrqHTULUSq7aagJmJPezkE+1IIVZOnmp1QMvFLA06NViGrbbZAiHyW1S4JH8mNLgv\nb/Qw2fexad1q4zOFPEG5rgBe/THuVRgtxvLlE9pE0cFz0rRsPWdtNwlpZX1tIZm2\nUeaZZg7lqf8WfgDpX8Rtko+9qXfhYFU+A0haqqzDXjIuqeoaLo9UqOgzjN4lUU4/\nzmg7NPCjFmDTGH864zgw7H3cGU3c2cae+JPSxPuDQdGMoV+EmOfwGrq1p7Ekjs3y\nvtPmfVsbGedpq2kPbKC33RT2/NieUyv2K+MiWif6gG5vNUzMU1KQ51297AfXuO06\nrA4snhNJ5OoduxKyVkVeZQIDAQABo2MwYTAdBgNVHQ4EFgQUs/4Fw9wsUo4pKxpg\n7y4yNWtFcScwHwYDVR0jBBgwFoAUs/4Fw9wsUo4pKxpg7y4yNWtFcScwDwYDVR0T\nAQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAYYwDQYJKoZIhvcNAQELBQADggIBADWy\n5lLLJK0Kpi+p0daQ+X4jfo5A7++8X3CLXldLgN2w29OcnuCSLGx+rZnGT2PqLtjo\nPIJD8HgRRXkEfi0EL2tZkWvs+aBh7Io6yAnJRxPdZcXcZvCi8meicqxH95YZY84L\ncZkaj/+rzOw8XRmT8iFbSanImDTN8QbG/OZHgTi0r8bUKsW0HC6IcmPaOxraL5RY\nt6cTeXf5Fhwa+4YjX2mgFYvNuDTRTAJQEUeL6dXXP45cZTuQSazWodogDocN5eiB\nfAV53r7xY5YtWxbluTLBSblDOuRF4kUhDVeoSL0yNNOy7K9QYlM3edQVSaXxmwzD\nQILBlAwhbPoNwRLliqDybR3ldQf+eQjtnGby0yPQjoroyVdk5so7UJZ+KlkuJScu\nSbyaj+aac9jOBVakVWjMqCw1HmWggIoapO1h13WNDVUlcORPseDwbspSDTrdVnen\nw8TeiciUOBaPmf0+gDiJTK9y166sL8JWkX3qITh51G9j06vmII4BXUgDWZg4O3Vx\nzu3OJdurELqQZc+pbxCahv8M5F8vlCwHmZVcbifmtHsupwTrrgxRyujbv6nkxLrb\nzObwT0Fcr+M+1ppS3CsHZS1gQEfIWv6JhkiFM+uobnSA9/l1oWcgirM1SyPFZ2y9\n5mc2h7aFx9xMEWYJT6tonS2LtWklRLx2rcM7g+Wq\n-----END CERTIFICATE-----\n\nEND_OF_CA\nchmod 600 \"$caCrt\"\n\nlogMessage \"Fetching second stage installer...\"\ncurlAgentWithoutCerts --data \"templateId=$templateId\" --output \"$installScript\" \"$installUrl\"\nfailIfNotZero \"$?\" 'Problem fetching second stage installer'\nfailIfDoesNotExist \"$installScript\" 'Problem fetching second stage installer'\nlogMessage 'Successfully fetched second stage installer'\n\nlogMessage 'Executing second stage installer...'\nbash \"$installScript\"\n"}, "changed": false}
+2018-05-14 03:48:12,669 p=9188 u=gmonkey |  TASK [shrikeh.jumpcloud : Ensure temp directory exists] ************************
+2018-05-14 03:48:12,669 p=9188 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:17
+2018-05-14 03:48:13,074 p=9188 u=gmonkey |  [0;31m--- before
+[0m[0;32m+++ after
+[0m[0;36m@@ -1,6 +1,6 @@
+[0m {
+[0;31m-    "group": 1000, 
+[0m[0;31m-    "mode": "0775", 
+[0m[0;31m-    "owner": 1000, 
+[0m[0;32m+    "group": 0, 
+[0m[0;32m+    "mode": "0700", 
+[0m[0;32m+    "owner": 0, 
+[0m     "path": "/tmp/jc_install"
+ }
+
+2018-05-14 03:48:13,075 p=9188 u=gmonkey |  changed: [18.196.50.237] => {"changed": true, "gid": 0, "group": "root", "mode": "0700", "owner": "root", "path": "/tmp/jc_install", "size": 4096, "state": "directory", "uid": 0}
+2018-05-14 03:48:13,079 p=9188 u=gmonkey |  TASK [shrikeh.jumpcloud : Copy the string into position] ***********************
+2018-05-14 03:48:13,080 p=9188 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:26
+2018-05-14 03:48:14,434 p=9188 u=gmonkey |  [0;31m--- before
+[0m[0;32m+++ after: dynamically generated
+[0m[0;36m@@ -0,0 +1,257 @@
+[0m[0;32m+#!/bin/bash
+[0m[0;32m+
+[0m[0;32m+LOGFILE="/opt/jc/jcagentInstall.log"
+[0m[0;32m+PATH='/sbin:/bin:/usr/sbin:/usr/bin'
+[0m[0;32m+
+[0m[0;32m+agentInstallDir='/opt/jc/'
+[0m[0;32m+clientKeyName='client.key'
+[0m[0;32m+clientCrtName='client.crt'
+[0m[0;32m+caCrtName='ca.crt'
+[0m[0;32m+connectKey='1f42e80023dfc11a4a69dbfa52c92570101caad4'
+[0m[0;32m+
+[0m[0;32m+clientKey="$agentInstallDir/$clientKeyName"
+[0m[0;32m+clientCrt="$agentInstallDir/$clientCrtName"
+[0m[0;32m+caCrt="$agentInstallDir/$caCrtName"
+[0m[0;32m+installScript="$agentInstallDir/agentInstall.sh"
+[0m[0;32m+
+[0m[0;32m+proxyFile="/etc/jcagent-proxy.conf"
+[0m[0;32m+
+[0m[0;32m+if [ -r "${proxyFile}" ]
+[0m[0;32m+then
+[0m[0;32m+  export http_proxy="`cat ${proxyFile}`"
+[0m[0;32m+  export https_proxy="`cat ${proxyFile}`"
+[0m[0;32m+fi
+[0m[0;32m+
+[0m[0;32m+
+[0m[0;32m+logMessage() {
+[0m[0;32m+    local msg="$(date -u): $1"
+[0m[0;32m+    echo "$msg" &> 2
+[0m[0;32m+    echo "$msg" >> $LOGFILE
+[0m[0;32m+}
+[0m[0;32m+
+[0m[0;32m+failWithMessage() {
+[0m[0;32m+    logMessage "$1"
+[0m[0;32m+    logMessage "It appears your agent installation has failed. Please contact support@jumpcloud.com."
+[0m[0;32m+    exit 1
+[0m[0;32m+}
+[0m[0;32m+
+[0m[0;32m+
+[0m[0;32m+printMessageIfNotZero() {
+[0m[0;32m+  if [ "$1" != '0' ]; then
+[0m[0;32m+    logMessage "$2"
+[0m[0;32m+  fi
+[0m[0;32m+}
+[0m[0;32m+failIfNotZero() {
+[0m[0;32m+    if [ "$1" != '0' ]; then
+[0m[0;32m+        failWithMessage "$2"
+[0m[0;32m+    fi
+[0m[0;32m+}
+[0m[0;32m+
+[0m[0;32m+failIfDoesNotExist() {
+[0m[0;32m+    if [ ! -e "$1" ]; then
+[0m[0;32m+        failWithMessage "$2"
+[0m[0;32m+    fi
+[0m[0;32m+}
+[0m[0;32m+
+[0m[0;32m+setTimeIfIncorrect() {
+[0m[0;32m+  local ERRMSG="$2"
+[0m[0;32m+  if [ "$1" != '0' ]; then
+[0m[0;32m+    checkFor 'ntpdate'
+[0m[0;32m+    local CMDRES="$?"
+[0m[0;32m+    if [ "$CMDRES" != '0' ]; then
+[0m[0;32m+      failWithMessage "$ERRMSG"
+[0m[0;32m+    else
+[0m[0;32m+      logMessage "$2"
+[0m[0;32m+      ntpdate -u pool.ntp.org
+[0m[0;32m+      localTime="$(date +%s)"
+[0m[0;32m+      curlAgentWithoutCerts --data "time=$localTime" "$timeUrl"
+[0m[0;32m+      local CURLRES="$?"
+[0m[0;32m+      printMessageIfNotZero "$CURLRES" "Problem setting time with ntpdate"
+[0m[0;32m+      failIfNotZero "$CURLRES" "$ERRMSG"
+[0m[0;32m+    fi
+[0m[0;32m+  fi
+[0m[0;32m+}
+[0m[0;32m+checkFor() {
+[0m[0;32m+    type "$1" >/dev/null 2>&1
+[0m[0;32m+}
+[0m[0;32m+
+[0m[0;32m+failIfCommandNotFound() {
+[0m[0;32m+    checkFor "$1"
+[0m[0;32m+    failIfNotZero "$?" "Necessary command not found: '$1'"
+[0m[0;32m+}
+[0m[0;32m+
+[0m[0;32m+curlAgentWithoutCerts() {
+[0m[0;32m+    attempts=3
+[0m[0;32m+  delay=3
+[0m[0;32m+    n=0
+[0m[0;32m+    until curl --silent --show-error --fail --header "X-Connect-Key: $connectKey" "$@"; do
+[0m[0;32m+        ret=$?
+[0m[0;32m+        n=$[$n+1]
+[0m[0;32m+        if [ "$n" -ge "$attempts" ]; then
+[0m[0;32m+            logMessage "Failed curl ($n of $attempts), quitting ..."
+[0m[0;32m+            return $ret
+[0m[0;32m+        else
+[0m[0;32m+            logMessage "Failed curl ($n of $attempts), retrying after delay ..."
+[0m[0;32m+            sleep $delay
+[0m[0;32m+        fi
+[0m[0;32m+    done
+[0m[0;32m+    return $?
+[0m[0;32m+}
+[0m[0;32m+
+[0m[0;32m+failIfCommandNotFound id
+[0m[0;32m+if [ "$(id -u)" != '0' ]; then
+[0m[0;32m+    failWithMessage 'Script must be run as root (or with sudo)'
+[0m[0;32m+fi
+[0m[0;32m+
+[0m[0;32m+failIfCommandNotFound mkdir
+[0m[0;32m+failIfCommandNotFound chmod
+[0m[0;32m+mkdir -p "$agentInstallDir/bin"
+[0m[0;32m+chmod 700 "$agentInstallDir"
+[0m[0;32m+
+[0m[0;32m+publicUrlBase='https://kickstart.jumpcloud.com'
+[0m[0;32m+privateUrlBase='https://private-kickstart.jumpcloud.com'
+[0m[0;32m+
+[0m[0;32m+detectUrl="$publicUrlBase/Detect"
+[0m[0;32m+timeUrl="$publicUrlBase/Time"
+[0m[0;32m+installUrl="$publicUrlBase/GetAgentInstall"
+[0m[0;32m+
+[0m[0;32m+templateFile="$agentInstallDir/templateId"
+[0m[0;32m+clientCsr="$agentInstallDir/client.csr"
+[0m[0;32m+
+[0m[0;32m+bootstrapFile="/opt/jc//agentBootstrap.json"
+[0m[0;32m+
+[0m[0;32m+# Write the bootstrap file to allow for resealing
+[0m[0;32m+mkdir -p "/opt/jc/"
+[0m[0;32m+cat <<-EOF >"${bootstrapFile}"
+[0m[0;32m+    {
+[0m[0;32m+       "publicKickstartUrl": "https://kickstart.jumpcloud.com",
+[0m[0;32m+       "privateKickstartUrl": "https://private-kickstart.jumpcloud.com",
+[0m[0;32m+       "connectKey": "1f42e80023dfc11a4a69dbfa52c92570101caad4"
+[0m[0;32m+    }
+[0m[0;32m+EOF
+[0m[0;32m+
+[0m[0;32m+if grep -q Debian /etc/issue; then # force curl install for debian
+[0m[0;32m+  apt-get install curl -y
+[0m[0;32m+fi
+[0m[0;32m+
+[0m[0;32m+logMessage "Starting agent install, connectKey=$connectKey"
+[0m[0;32m+
+[0m[0;32m+logMessage 'Checking for necessary install commands...'
+[0m[0;32m+notFoundCommands=''
+[0m[0;32m+for command in bash cat date grep head openssl rm uname tee; do
+[0m[0;32m+    checkFor "$command"
+[0m[0;32m+    if [ "$?" != '0' ]; then
+[0m[0;32m+        notFoundCommands="$notFoundCommands $command"
+[0m[0;32m+    fi
+[0m[0;32m+done
+[0m[0;32m+if [ -n "$notFoundCommands" ]; then
+[0m[0;32m+    failWithMessage "Missing necessary install commands: $notFoundCommands"
+[0m[0;32m+else
+[0m[0;32m+    logMessage 'Necessary install commands found'
+[0m[0;32m+fi
+[0m[0;32m+
+[0m[0;32m+logMessage 'Checking system compatibility...'
+[0m[0;32m+arch="$(uname -m)"
+[0m[0;32m+if [ -f /etc/system-release ]; then
+[0m[0;32m+    logMessage "Getting OS info from /etc/system-release"
+[0m[0;32m+    os="$(head -n 1 /etc/system-release)"
+[0m[0;32m+else
+[0m[0;32m+    logMessage "Getting OS info from /etc/issue"
+[0m[0;32m+    os="$(head -n 1 /etc/issue)"
+[0m[0;32m+fi
+[0m[0;32m+curlAgentWithoutCerts --data "arch=$arch&os=$os" --output "$templateFile" "$detectUrl"
+[0m[0;32m+if [ "$?" != '0' ] || [ ! -f "$templateFile" ]; then
+[0m[0;32m+    failWithMessage "Your OS/architecture [$os/$arch] is not supported. Please visit https://support.jumpcloud.com/customer/portal/articles/2390451-jumpcloud-agent-compatibility-and-system-impacts for a list of supported systems."
+[0m[0;32m+fi
+[0m[0;32m+logMessage 'System is supported'
+[0m[0;32m+templateId="$(cat "$templateFile")"
+[0m[0;32m+rm -f "$templateFile"
+[0m[0;32m+
+[0m[0;32m+logMessage 'Checking local system time...'
+[0m[0;32m+localTime="$(date +%s)"
+[0m[0;32m+curlAgentWithoutCerts --data "time=$localTime" "$timeUrl"
+[0m[0;32m+setTimeIfIncorrect "$?" "Your system time seems inaccurate. Please ensure your system is set to the correct time by running ntpdate ('ntpdate -u pool.ntp.org') or verifying that ntpd is configured properly."
+[0m[0;32m+localTime="$(date +%s)"
+[0m[0;32m+logMessage 'System time is accurate'
+[0m[0;32m+
+[0m[0;32m+cat >"$caCrt" <<END_OF_CA
+[0m[0;32m+-----BEGIN CERTIFICATE-----
+[0m[0;32m+MIIF7zCCA9egAwIBAgICEAMwDQYJKoZIhvcNAQELBQAwgYExCzAJBgNVBAYTAlVT
+[0m[0;32m+MREwDwYDVQQIDAhDb2xvcmFkbzESMBAGA1UECgwJSnVtcENsb3VkMR4wHAYDVQQL
+[0m[0;32m+DBVKdW1wQ2xvdWQgRW5naW5lZXJpbmcxKzApBgNVBAMMIkp1bXBDbG91ZCBQcm9k
+[0m[0;32m+dWN0aW9uIEFnZW50IFJvb3QgQ0EwHhcNMTcxMDI0MTY0ODQwWhcNMjcxMDIyMTY0
+[0m[0;32m+ODQwWjCBijELMAkGA1UEBhMCVVMxETAPBgNVBAgMCENvbG9yYWRvMRIwEAYDVQQK
+[0m[0;32m+DAlKdW1wQ2xvdWQxHjAcBgNVBAsMFUp1bXBDbG91ZCBFbmdpbmVlcmluZzE0MDIG
+[0m[0;32m+A1UEAwwrSnVtcENsb3VkIFByb2R1Y3Rpb24gQWdlbnQgU2VydmVyIElzc3VlciBD
+[0m[0;32m+QTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIBAOIkU+shzb15SAdBcrJe
+[0m[0;32m+BbD/Y6WCyOLYTvoJbSWzKeqMZ9yuyX5FgQq/eHrqYjD4NBqROB8IzoH1ipKt6CTv
+[0m[0;32m+LvN2cH8WNdJvHUN45oH+mleNlK8zH227PiWHxduxnjiPpejV1ogF/Tagnm7HQM/M
+[0m[0;32m+8CVILYMAm4B1K6i0BRJjByykjGqk849tWXhh8N8NkMh79QDTxFH8WRTaLfIWhXQL
+[0m[0;32m+ruD+IDyRUkvJyuMmjhdkaoqWDHvY4V+iMPQ2UOb1VME0Q1MFoFq/V1LNmaN9ZTPZ
+[0m[0;32m+zd+YzwIkYuV8+tKsOCV/xToZqclID7dUoezrddN0tTrAT8/EO/L4v9EObDsi5pl/
+[0m[0;32m+AQtoSBmW0gZC9HflJgyOXO8bvawQLjpx/8sOEr+9KfPWtmZ5o6/46GeVnMtuivV4
+[0m[0;32m+MK0W3CdQL/NcpoZWkX/fr4xFR4HNrL6bOgIKgPw0iVS7RwRNjiauGkIxV8yO9ZIZ
+[0m[0;32m+qlhlQc2TG8SaU1l0lLEdC/Bs+zC4J0dw3Y2YQU8p3XNFG9scfqAYDSz6zVgWbuvh
+[0m[0;32m+/ZNHpeizQnLDI/COFpvuWociUplV/K0yRgA/5fLTBuy8r6lLVFjaYE3Q7we0lPzD
+[0m[0;32m+1D5fQmMBzPa4GfI5EztUOuX5yLY5nW5TawghBdT0yUbJehMJoa7IvNLIT8uY/wHJ
+[0m[0;32m+in+3ggS4DFicoej9mzQbs3+RAgMBAAGjZjBkMB0GA1UdDgQWBBS6i5csdoEOdTr9
+[0m[0;32m+4TnRlEijTt47VDAfBgNVHSMEGDAWgBSz/gXD3CxSjikrGmDvLjI1a0VxJzASBgNV
+[0m[0;32m+HRMBAf8ECDAGAQH/AgEAMA4GA1UdDwEB/wQEAwIBhjANBgkqhkiG9w0BAQsFAAOC
+[0m[0;32m+AgEAMWy5DHMVHJr70HAaJP+wQiqr8YiwNo0FhWewNbWbtr2tb+7+iKLftRJOBbEN
+[0m[0;32m+fFcBdEFuj5YkbISIgUoyOJwl95403YQSHlRROqLewRG1vaRvNi+IfrHXFsSlZuHq
+[0m[0;32m+NTet3PfkLLCVpmWJCtMhKUG3EBkb24TqINgfEChHaWiVeXgNCeXdVpKUBGbxVdZ8
+[0m[0;32m+IM/2cSb5951VK9Da09xzfpeX5hDQGuzSD9QkOtXeg27G5Fex3oRvmAGxegU+LLPM
+[0m[0;32m+zhBkju9IaRbe/f6bPPyFHagwNv9bSa9YjYS0VsPhv9mgTG0TNHsJUicOpNxkW3jv
+[0m[0;32m+imuVlanQvKjlCWYmZPswHKP3+V4vI4pO9gOfzrKKGjQ33/Z2sG6KmIbMqMol9Sae
+[0m[0;32m+wsb+W2gOzdbqqi8nT5pEyk8LjE6NiSXDooNtEsCBLGbQ5kMjzpPrMwJOdmnPWEdm
+[0m[0;32m+gmeSYDilvemsBZTFY8Ay1JSXK61aOlJW1e4LVWbz22HSRvCPqyedG7ar7gL32oIy
+[0m[0;32m+2hx2rE9lNf1MSIOAhK5g/i3ijFUv54/EMWqabVxPFDGQUozuMvDq4ztUI+3Af0LG
+[0m[0;32m+AhNDkCkdnwvQtWCjxFmHNvq1MimXm3A4kcLseb/fho6FMLGP2g8Rh8HxKz1kRCXC
+[0m[0;32m+YX66zt9AUMZr1z0m+saxo/aGO7jRYrSG9sZANwK11ZY269o=
+[0m[0;32m+-----END CERTIFICATE-----
+[0m[0;32m+-----BEGIN CERTIFICATE-----
+[0m[0;32m+MIIF6jCCA9KgAwIBAgIJAJBXUsJ+UkXfMA0GCSqGSIb3DQEBCwUAMIGBMQswCQYD
+[0m[0;32m+VQQGEwJVUzERMA8GA1UECAwIQ29sb3JhZG8xEjAQBgNVBAoMCUp1bXBDbG91ZDEe
+[0m[0;32m+MBwGA1UECwwVSnVtcENsb3VkIEVuZ2luZWVyaW5nMSswKQYDVQQDDCJKdW1wQ2xv
+[0m[0;32m+dWQgUHJvZHVjdGlvbiBBZ2VudCBSb290IENBMB4XDTE3MTAyNDE2NDgzOVoXDTM3
+[0m[0;32m+MTAxOTE2NDgzOVowgYExCzAJBgNVBAYTAlVTMREwDwYDVQQIDAhDb2xvcmFkbzES
+[0m[0;32m+MBAGA1UECgwJSnVtcENsb3VkMR4wHAYDVQQLDBVKdW1wQ2xvdWQgRW5naW5lZXJp
+[0m[0;32m+bmcxKzApBgNVBAMMIkp1bXBDbG91ZCBQcm9kdWN0aW9uIEFnZW50IFJvb3QgQ0Ew
+[0m[0;32m+ggIiMA0GCSqGSIb3DQEBAQUAA4ICDwAwggIKAoICAQDrAqUlYdvN55qrR8E0CE41
+[0m[0;32m+bE38dsB+Ca1Umgl+N3RENJEIjkZx17yFHbXpmIufrX2MdvXo1eD1G5Y2DsCzL3AK
+[0m[0;32m+mqOuX20mRVQ+0yLzYsyF87QXzjP6wLPY4JAsQUtcEeogkmNf+mpUBGu2s9P0Csse
+[0m[0;32m+B499Lk6Xy/F4iPez+xTIrgd0+mmrPTbgQK5Uegmb22SxYZadZ8rVJeTjL8iTdj80
+[0m[0;32m+GcFS6R94vmRejcVgnz4XFok72lJqSyB1rbPtS5uhmN4BDxQRQ1qeBtET9Eh58n+9
+[0m[0;32m+15aqxSyojWyHHAZ7GFPqIyai+TX8YQ1OyRjalEzJFJLvpCkNt4T43RcCEitRF0fD
+[0m[0;32m+rqHTULUSq7aagJmJPezkE+1IIVZOnmp1QMvFLA06NViGrbbZAiHyW1S4JH8mNLgv
+[0m[0;32m+b/Qw2fexad1q4zOFPEG5rgBe/THuVRgtxvLlE9pE0cFz0rRsPWdtNwlpZX1tIZm2
+[0m[0;32m+UeaZZg7lqf8WfgDpX8Rtko+9qXfhYFU+A0haqqzDXjIuqeoaLo9UqOgzjN4lUU4/
+[0m[0;32m+zmg7NPCjFmDTGH864zgw7H3cGU3c2cae+JPSxPuDQdGMoV+EmOfwGrq1p7Ekjs3y
+[0m[0;32m+vtPmfVsbGedpq2kPbKC33RT2/NieUyv2K+MiWif6gG5vNUzMU1KQ51297AfXuO06
+[0m[0;32m+rA4snhNJ5OoduxKyVkVeZQIDAQABo2MwYTAdBgNVHQ4EFgQUs/4Fw9wsUo4pKxpg
+[0m[0;32m+7y4yNWtFcScwHwYDVR0jBBgwFoAUs/4Fw9wsUo4pKxpg7y4yNWtFcScwDwYDVR0T
+[0m[0;32m+AQH/BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAYYwDQYJKoZIhvcNAQELBQADggIBADWy
+[0m[0;32m+5lLLJK0Kpi+p0daQ+X4jfo5A7++8X3CLXldLgN2w29OcnuCSLGx+rZnGT2PqLtjo
+[0m[0;32m+PIJD8HgRRXkEfi0EL2tZkWvs+aBh7Io6yAnJRxPdZcXcZvCi8meicqxH95YZY84L
+[0m[0;32m+cZkaj/+rzOw8XRmT8iFbSanImDTN8QbG/OZHgTi0r8bUKsW0HC6IcmPaOxraL5RY
+[0m[0;32m+t6cTeXf5Fhwa+4YjX2mgFYvNuDTRTAJQEUeL6dXXP45cZTuQSazWodogDocN5eiB
+[0m[0;32m+fAV53r7xY5YtWxbluTLBSblDOuRF4kUhDVeoSL0yNNOy7K9QYlM3edQVSaXxmwzD
+[0m[0;32m+QILBlAwhbPoNwRLliqDybR3ldQf+eQjtnGby0yPQjoroyVdk5so7UJZ+KlkuJScu
+[0m[0;32m+Sbyaj+aac9jOBVakVWjMqCw1HmWggIoapO1h13WNDVUlcORPseDwbspSDTrdVnen
+[0m[0;32m+w8TeiciUOBaPmf0+gDiJTK9y166sL8JWkX3qITh51G9j06vmII4BXUgDWZg4O3Vx
+[0m[0;32m+zu3OJdurELqQZc+pbxCahv8M5F8vlCwHmZVcbifmtHsupwTrrgxRyujbv6nkxLrb
+[0m[0;32m+zObwT0Fcr+M+1ppS3CsHZS1gQEfIWv6JhkiFM+uobnSA9/l1oWcgirM1SyPFZ2y9
+[0m[0;32m+5mc2h7aFx9xMEWYJT6tonS2LtWklRLx2rcM7g+Wq
+[0m[0;32m+-----END CERTIFICATE-----
+[0m[0;32m+
+[0m[0;32m+END_OF_CA
+[0m[0;32m+chmod 600 "$caCrt"
+[0m[0;32m+
+[0m[0;32m+logMessage "Fetching second stage installer..."
+[0m[0;32m+curlAgentWithoutCerts --data "templateId=$templateId" --output "$installScript" "$installUrl"
+[0m[0;32m+failIfNotZero "$?" 'Problem fetching second stage installer'
+[0m[0;32m+failIfDoesNotExist "$installScript" 'Problem fetching second stage installer'
+[0m[0;32m+logMessage 'Successfully fetched second stage installer'
+[0m[0;32m+
+[0m[0;32m+logMessage 'Executing second stage installer...'
+[0m[0;32m+bash "$installScript"
+[0m
+
+2018-05-14 03:48:14,436 p=9188 u=gmonkey |  changed: [18.196.50.237] => {"changed": true, "checksum": "edbc8775c5dc815f6ccec9f0fb243acd1f6abb7d", "dest": "/tmp/jc_install/install.sh", "gid": 0, "group": "root", "md5sum": "8d9f2dd64e77b54aeb59eacf91556717", "mode": "0700", "owner": "root", "size": 9540, "src": "/tmp/ubuntu-ansible-tmp/ansible-tmp-1526240893.11-39902717173164/source", "state": "file", "uid": 0}
+2018-05-14 03:48:14,439 p=9188 u=gmonkey |  TASK [shrikeh.jumpcloud : Execute this via the shell] **************************
+2018-05-14 03:48:14,439 p=9188 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:35
+2018-05-14 03:48:27,425 p=9188 u=gmonkey |  NOTIFIED HANDLER restart JumpCloud
+2018-05-14 03:48:27,426 p=9188 u=gmonkey |  changed: [18.196.50.237] => {"changed": true, "cmd": ["./install.sh"], "delta": "0:00:12.438002", "end": "2018-05-13 19:48:27.153313", "rc": 0, "start": "2018-05-13 19:48:14.715311", "stderr": "", "stdout": "", "stdout_lines": [], "warnings": []}
+2018-05-14 03:48:27,428 p=9188 u=gmonkey |  TASK [shrikeh.jumpcloud : Ensure jcagent is enabled and started] ***************
+2018-05-14 03:48:27,429 p=9188 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:15
+2018-05-14 03:48:27,820 p=9188 u=gmonkey |  ok: [18.196.50.237] => {"changed": false, "enabled": true, "name": "jcagent", "state": "started", "status": {"ActiveEnterTimestamp": "Sun 2018-05-13 19:48:27 UTC", "ActiveEnterTimestampMonotonic": "3321056769", "ActiveExitTimestampMonotonic": "0", "ActiveState": "active", "After": "basic.target sysinit.target syslog.target system.slice network.target systemd-journald.socket", "AllowIsolate": "no", "AmbientCapabilities": "0", "AssertResult": "yes", "AssertTimestamp": "Sun 2018-05-13 19:48:27 UTC", "AssertTimestampMonotonic": "3321056037", "Before": "shutdown.target multi-user.target", "BlockIOAccounting": "no", "BlockIOWeight": "18446744073709551615", "CPUAccounting": "no", "CPUQuotaPerSecUSec": "infinity", "CPUSchedulingPolicy": "0", "CPUSchedulingPriority": "0", "CPUSchedulingResetOnFork": "no", "CPUShares": "18446744073709551615", "CPUUsageNSec": "349747798", "CanIsolate": "no", "CanReload": "no", "CanStart": "yes", "CanStop": "yes", "CapabilityBoundingSet": "18446744073709551615", "ConditionResult": "yes", "ConditionTimestamp": "Sun 2018-05-13 19:48:27 UTC", "ConditionTimestampMonotonic": "3321056037", "Conflicts": "shutdown.target", "ControlGroup": "/system.slice/jcagent.service", "ControlPID": "0", "DefaultDependencies": "yes", "Delegate": "no", "Description": "JumpCloud Agent", "DevicePolicy": "auto", "Documentation": "http://support.jumpcloud.com/knowledgebase", "ExecMainCode": "0", "ExecMainExitTimestampMonotonic": "0", "ExecMainPID": "4888", "ExecMainStartTimestamp": "Sun 2018-05-13 19:48:27 UTC", "ExecMainStartTimestampMonotonic": "3321056741", "ExecMainStatus": "0", "ExecStart": "{ path=/opt/jc/bin/jumpcloud-agent ; argv[]=/opt/jc/bin/jumpcloud-agent -conf=/opt/jc/jcagent.conf ; ignore_errors=no ; start_time=[Sun 2018-05-13 19:48:27 UTC] ; stop_time=[n/a] ; pid=4888 ; code=(null) ; status=0/0 }", "FailureAction": "none", "FileDescriptorStoreMax": "0", "FragmentPath": "/lib/systemd/system/jcagent.service", "Group": "root", "GuessMainPID": "yes", "IOScheduling": "0", "Id": "jcagent.service", "IgnoreOnIsolate": "no", "IgnoreSIGPIPE": "yes", "InactiveEnterTimestampMonotonic": "0", "InactiveExitTimestamp": "Sun 2018-05-13 19:48:27 UTC", "InactiveExitTimestampMonotonic": "3321056769", "JobTimeoutAction": "none", "JobTimeoutUSec": "infinity", "KillMode": "process", "KillSignal": "15", "LimitAS": "18446744073709551615", "LimitASSoft": "18446744073709551615", "LimitCORE": "18446744073709551615", "LimitCORESoft": "0", "LimitCPU": "18446744073709551615", "LimitCPUSoft": "18446744073709551615", "LimitDATA": "18446744073709551615", "LimitDATASoft": "18446744073709551615", "LimitFSIZE": "18446744073709551615", "LimitFSIZESoft": "18446744073709551615", "LimitLOCKS": "18446744073709551615", "LimitLOCKSSoft": "18446744073709551615", "LimitMEMLOCK": "65536", "LimitMEMLOCKSoft": "65536", "LimitMSGQUEUE": "819200", "LimitMSGQUEUESoft": "819200", "LimitNICE": "0", "LimitNICESoft": "0", "LimitNOFILE": "4096", "LimitNOFILESoft": "1024", "LimitNPROC": "3900", "LimitNPROCSoft": "3900", "LimitRSS": "18446744073709551615", "LimitRSSSoft": "18446744073709551615", "LimitRTPRIO": "0", "LimitRTPRIOSoft": "0", "LimitRTTIME": "18446744073709551615", "LimitRTTIMESoft": "18446744073709551615", "LimitSIGPENDING": "3900", "LimitSIGPENDINGSoft": "3900", "LimitSTACK": "18446744073709551615", "LimitSTACKSoft": "8388608", "LoadState": "loaded", "MainPID": "4888", "MemoryAccounting": "no", "MemoryCurrent": "6234112", "MemoryLimit": "18446744073709551615", "MountFlags": "0", "NFileDescriptorStore": "0", "Names": "jcagent.service", "NeedDaemonReload": "no", "Nice": "0", "NoNewPrivileges": "no", "NonBlocking": "no", "NotifyAccess": "none", "OOMScoreAdjust": "0", "OnFailureJobMode": "replace", "PIDFile": "/opt/jc/jcagent.pid", "PermissionsStartOnly": "no", "PrivateDevices": "no", "PrivateNetwork": "no", "PrivateTmp": "no", "ProtectHome": "no", "ProtectSystem": "no", "RefuseManualStart": "no", "RefuseManualStop": "no", "RemainAfterExit": "no", "Requires": "sysinit.target system.slice", "Restart": "always", "RestartUSec": "100ms", "Result": "success", "RootDirectoryStartOnly": "no", "RuntimeDirectoryMode": "0755", "RuntimeMaxUSec": "infinity", "SameProcessGroup": "no", "SecureBits": "0", "SendSIGHUP": "no", "SendSIGKILL": "yes", "Slice": "system.slice", "StandardError": "inherit", "StandardInput": "null", "StandardOutput": "journal", "StartLimitAction": "none", "StartLimitBurst": "5", "StartLimitInterval": "10000000", "StartupBlockIOWeight": "18446744073709551615", "StartupCPUShares": "18446744073709551615", "StateChangeTimestamp": "Sun 2018-05-13 19:48:27 UTC", "StateChangeTimestampMonotonic": "3321056769", "StatusErrno": "0", "StopWhenUnneeded": "no", "SubState": "running", "SyslogFacility": "3", "SyslogLevel": "6", "SyslogLevelPrefix": "yes", "SyslogPriority": "30", "SystemCallErrorNumber": "0", "TTYReset": "no", "TTYVHangup": "no", "TTYVTDisallocate": "no", "TasksAccounting": "no", "TasksCurrent": "6", "TasksMax": "18446744073709551615", "TimeoutStartUSec": "1min 30s", "TimeoutStopUSec": "1min 30s", "TimerSlackNSec": "50000", "Transient": "no", "Type": "simple", "UMask": "0022", "UnitFilePreset": "enabled", "UnitFileState": "enabled", "User": "root", "UtmpMode": "init", "WantedBy": "multi-user.target", "Wants": "time-sync.target", "WatchdogTimestamp": "Sun 2018-05-13 19:48:27 UTC", "WatchdogTimestampMonotonic": "3321056767", "WatchdogUSec": "0"}}
+2018-05-14 03:48:27,821 p=9188 u=gmonkey |  RUNNING HANDLER [shrikeh.jumpcloud : restart JumpCloud] ************************
+2018-05-14 03:48:28,116 p=9188 u=gmonkey |  changed: [18.196.50.237] => {"changed": true, "name": "jcagent", "state": "started", "status": {"ActiveEnterTimestamp": "Sun 2018-05-13 19:48:27 UTC", "ActiveEnterTimestampMonotonic": "3321056769", "ActiveExitTimestampMonotonic": "0", "ActiveState": "active", "After": "basic.target sysinit.target syslog.target system.slice network.target systemd-journald.socket", "AllowIsolate": "no", "AmbientCapabilities": "0", "AssertResult": "yes", "AssertTimestamp": "Sun 2018-05-13 19:48:27 UTC", "AssertTimestampMonotonic": "3321056037", "Before": "shutdown.target multi-user.target", "BlockIOAccounting": "no", "BlockIOWeight": "18446744073709551615", "CPUAccounting": "no", "CPUQuotaPerSecUSec": "infinity", "CPUSchedulingPolicy": "0", "CPUSchedulingPriority": "0", "CPUSchedulingResetOnFork": "no", "CPUShares": "18446744073709551615", "CPUUsageNSec": "385020528", "CanIsolate": "no", "CanReload": "no", "CanStart": "yes", "CanStop": "yes", "CapabilityBoundingSet": "18446744073709551615", "ConditionResult": "yes", "ConditionTimestamp": "Sun 2018-05-13 19:48:27 UTC", "ConditionTimestampMonotonic": "3321056037", "Conflicts": "shutdown.target", "ControlGroup": "/system.slice/jcagent.service", "ControlPID": "0", "DefaultDependencies": "yes", "Delegate": "no", "Description": "JumpCloud Agent", "DevicePolicy": "auto", "Documentation": "http://support.jumpcloud.com/knowledgebase", "ExecMainCode": "0", "ExecMainExitTimestampMonotonic": "0", "ExecMainPID": "4888", "ExecMainStartTimestamp": "Sun 2018-05-13 19:48:27 UTC", "ExecMainStartTimestampMonotonic": "3321056741", "ExecMainStatus": "0", "ExecStart": "{ path=/opt/jc/bin/jumpcloud-agent ; argv[]=/opt/jc/bin/jumpcloud-agent -conf=/opt/jc/jcagent.conf ; ignore_errors=no ; start_time=[Sun 2018-05-13 19:48:27 UTC] ; stop_time=[n/a] ; pid=4888 ; code=(null) ; status=0/0 }", "FailureAction": "none", "FileDescriptorStoreMax": "0", "FragmentPath": "/lib/systemd/system/jcagent.service", "Group": "root", "GuessMainPID": "yes", "IOScheduling": "0", "Id": "jcagent.service", "IgnoreOnIsolate": "no", "IgnoreSIGPIPE": "yes", "InactiveEnterTimestampMonotonic": "0", "InactiveExitTimestamp": "Sun 2018-05-13 19:48:27 UTC", "InactiveExitTimestampMonotonic": "3321056769", "JobTimeoutAction": "none", "JobTimeoutUSec": "infinity", "KillMode": "process", "KillSignal": "15", "LimitAS": "18446744073709551615", "LimitASSoft": "18446744073709551615", "LimitCORE": "18446744073709551615", "LimitCORESoft": "0", "LimitCPU": "18446744073709551615", "LimitCPUSoft": "18446744073709551615", "LimitDATA": "18446744073709551615", "LimitDATASoft": "18446744073709551615", "LimitFSIZE": "18446744073709551615", "LimitFSIZESoft": "18446744073709551615", "LimitLOCKS": "18446744073709551615", "LimitLOCKSSoft": "18446744073709551615", "LimitMEMLOCK": "65536", "LimitMEMLOCKSoft": "65536", "LimitMSGQUEUE": "819200", "LimitMSGQUEUESoft": "819200", "LimitNICE": "0", "LimitNICESoft": "0", "LimitNOFILE": "4096", "LimitNOFILESoft": "1024", "LimitNPROC": "3900", "LimitNPROCSoft": "3900", "LimitRSS": "18446744073709551615", "LimitRSSSoft": "18446744073709551615", "LimitRTPRIO": "0", "LimitRTPRIOSoft": "0", "LimitRTTIME": "18446744073709551615", "LimitRTTIMESoft": "18446744073709551615", "LimitSIGPENDING": "3900", "LimitSIGPENDINGSoft": "3900", "LimitSTACK": "18446744073709551615", "LimitSTACKSoft": "8388608", "LoadState": "loaded", "MainPID": "4888", "MemoryAccounting": "no", "MemoryCurrent": "6627328", "MemoryLimit": "18446744073709551615", "MountFlags": "0", "NFileDescriptorStore": "0", "Names": "jcagent.service", "NeedDaemonReload": "no", "Nice": "0", "NoNewPrivileges": "no", "NonBlocking": "no", "NotifyAccess": "none", "OOMScoreAdjust": "0", "OnFailureJobMode": "replace", "PIDFile": "/opt/jc/jcagent.pid", "PermissionsStartOnly": "no", "PrivateDevices": "no", "PrivateNetwork": "no", "PrivateTmp": "no", "ProtectHome": "no", "ProtectSystem": "no", "RefuseManualStart": "no", "RefuseManualStop": "no", "RemainAfterExit": "no", "Requires": "sysinit.target system.slice", "Restart": "always", "RestartUSec": "100ms", "Result": "success", "RootDirectoryStartOnly": "no", "RuntimeDirectoryMode": "0755", "RuntimeMaxUSec": "infinity", "SameProcessGroup": "no", "SecureBits": "0", "SendSIGHUP": "no", "SendSIGKILL": "yes", "Slice": "system.slice", "StandardError": "inherit", "StandardInput": "null", "StandardOutput": "journal", "StartLimitAction": "none", "StartLimitBurst": "5", "StartLimitInterval": "10000000", "StartupBlockIOWeight": "18446744073709551615", "StartupCPUShares": "18446744073709551615", "StateChangeTimestamp": "Sun 2018-05-13 19:48:27 UTC", "StateChangeTimestampMonotonic": "3321056769", "StatusErrno": "0", "StopWhenUnneeded": "no", "SubState": "running", "SyslogFacility": "3", "SyslogLevel": "6", "SyslogLevelPrefix": "yes", "SyslogPriority": "30", "SystemCallErrorNumber": "0", "TTYReset": "no", "TTYVHangup": "no", "TTYVTDisallocate": "no", "TasksAccounting": "no", "TasksCurrent": "6", "TasksMax": "18446744073709551615", "TimeoutStartUSec": "1min 30s", "TimeoutStopUSec": "1min 30s", "TimerSlackNSec": "50000", "Transient": "no", "Type": "simple", "UMask": "0022", "UnitFilePreset": "enabled", "UnitFileState": "enabled", "User": "root", "UtmpMode": "init", "WantedBy": "multi-user.target", "Wants": "time-sync.target", "WatchdogTimestamp": "Sun 2018-05-13 19:48:27 UTC", "WatchdogTimestampMonotonic": "3321056767", "WatchdogUSec": "0"}}
+2018-05-14 03:48:28,119 p=9188 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 03:48:28,120 p=9188 u=gmonkey |  18.196.50.237              : ok=10   changed=4    unreachable=0    failed=0   
+2018-05-14 03:49:57,582 p=9251 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 03:49:57,665 p=9251 u=gmonkey |  statically included: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml
+2018-05-14 03:49:57,686 p=9251 u=gmonkey |  PLAYBOOK: jumpcloud.yml ********************************************************
+2018-05-14 03:49:57,687 p=9251 u=gmonkey |  1 plays in jumpcloud.yml
+2018-05-14 03:49:57,689 p=9251 u=gmonkey |  PLAY [jumpcloud-clients] *******************************************************
+2018-05-14 03:49:57,713 p=9251 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 03:50:02,468 p=9251 u=gmonkey |  ok: [18.196.50.237]
+2018-05-14 03:50:02,473 p=9251 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 03:50:02,474 p=9251 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:2
+2018-05-14 03:50:02,839 p=9251 u=gmonkey |  ok: [18.196.50.237] => {"changed": false, "stat": {"atime": 1526240904.864694, "ctime": 1526240908.0247464, "dev": 51713, "executable": true, "exists": true, "gid": 0, "gr_name": "root", "inode": 257112, "isblk": false, "ischr": false, "isdir": true, "isfifo": false, "isgid": false, "islnk": false, "isreg": false, "issock": false, "isuid": false, "mode": "0700", "mtime": 1526240908.0247464, "nlink": 4, "path": "/opt/jc", "pw_name": "root", "readable": true, "rgrp": false, "roth": false, "rusr": true, "size": 4096, "uid": 0, "wgrp": false, "woth": false, "writeable": true, "wusr": true, "xgrp": false, "xoth": false, "xusr": true}}
+2018-05-14 03:50:02,843 p=9251 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 03:50:02,843 p=9251 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:7
+2018-05-14 03:50:02,872 p=9251 u=gmonkey |  ok: [18.196.50.237] => {"ansible_facts": {"jc_not_installed": false}, "changed": false}
+2018-05-14 03:50:02,876 p=9251 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 03:50:02,877 p=9251 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:2
+2018-05-14 03:50:02,901 p=9251 u=gmonkey |  skipping: [18.196.50.237] => {"changed": false, "skip_reason": "Conditional check failed", "skipped": true}
+2018-05-14 03:50:02,904 p=9251 u=gmonkey |  TASK [shrikeh.jumpcloud : Register the install script output as a variable] ****
+2018-05-14 03:50:02,905 p=9251 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:11
+2018-05-14 03:50:02,926 p=9251 u=gmonkey |  skipping: [18.196.50.237] => {"changed": false, "skip_reason": "Conditional check failed", "skipped": true}
+2018-05-14 03:50:02,929 p=9251 u=gmonkey |  TASK [shrikeh.jumpcloud : Ensure temp directory exists] ************************
+2018-05-14 03:50:02,929 p=9251 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:16
+2018-05-14 03:50:02,952 p=9251 u=gmonkey |  skipping: [18.196.50.237] => {"changed": false, "skip_reason": "Conditional check failed", "skipped": true}
+2018-05-14 03:50:02,958 p=9251 u=gmonkey |  TASK [shrikeh.jumpcloud : Copy the string into position] ***********************
+2018-05-14 03:50:02,958 p=9251 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:25
+2018-05-14 03:50:02,980 p=9251 u=gmonkey |  skipping: [18.196.50.237] => {"changed": false, "skip_reason": "Conditional check failed", "skipped": true}
+2018-05-14 03:50:02,983 p=9251 u=gmonkey |  TASK [shrikeh.jumpcloud : Execute this via the shell] **************************
+2018-05-14 03:50:02,983 p=9251 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/install.yml:34
+2018-05-14 03:50:03,005 p=9251 u=gmonkey |  skipping: [18.196.50.237] => {"changed": false, "skip_reason": "Conditional check failed", "skipped": true}
+2018-05-14 03:50:03,008 p=9251 u=gmonkey |  TASK [shrikeh.jumpcloud : Ensure jcagent is enabled and started] ***************
+2018-05-14 03:50:03,008 p=9251 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml:15
+2018-05-14 03:50:03,352 p=9251 u=gmonkey |  changed: [18.196.50.237] => {"changed": true, "enabled": true, "name": "jcagent", "state": "started", "status": {"ActiveEnterTimestamp": "Sun 2018-05-13 19:48:28 UTC", "ActiveEnterTimestampMonotonic": "3322785278", "ActiveExitTimestamp": "Sun 2018-05-13 19:48:28 UTC", "ActiveExitTimestampMonotonic": "3322789821", "ActiveState": "inactive", "After": "basic.target sysinit.target syslog.target system.slice network.target systemd-journald.socket", "AllowIsolate": "no", "AmbientCapabilities": "0", "AssertResult": "yes", "AssertTimestamp": "Sun 2018-05-13 19:48:29 UTC", "AssertTimestampMonotonic": "3323033958", "Before": "shutdown.target multi-user.target", "BlockIOAccounting": "no", "BlockIOWeight": "18446744073709551615", "CPUAccounting": "no", "CPUQuotaPerSecUSec": "infinity", "CPUSchedulingPolicy": "0", "CPUSchedulingPriority": "0", "CPUSchedulingResetOnFork": "no", "CPUShares": "18446744073709551615", "CPUUsageNSec": "18446744073709551615", "CanIsolate": "no", "CanReload": "no", "CanStart": "yes", "CanStop": "yes", "CapabilityBoundingSet": "18446744073709551615", "ConditionResult": "yes", "ConditionTimestamp": "Sun 2018-05-13 19:48:29 UTC", "ConditionTimestampMonotonic": "3323033957", "Conflicts": "shutdown.target", "ControlPID": "0", "DefaultDependencies": "yes", "Delegate": "no", "Description": "JumpCloud Agent", "DevicePolicy": "auto", "Documentation": "http://support.jumpcloud.com/knowledgebase", "ExecMainCode": "1", "ExecMainExitTimestamp": "Sun 2018-05-13 19:48:28 UTC", "ExecMainExitTimestampMonotonic": "3322789737", "ExecMainPID": "4938", "ExecMainStartTimestamp": "Sun 2018-05-13 19:48:28 UTC", "ExecMainStartTimestampMonotonic": "3322785232", "ExecMainStatus": "1", "ExecStart": "{ path=/opt/jc/bin/jumpcloud-agent ; argv[]=/opt/jc/bin/jumpcloud-agent -conf=/opt/jc/jcagent.conf ; ignore_errors=no ; start_time=[Sun 2018-05-13 19:48:28 UTC] ; stop_time=[Sun 2018-05-13 19:48:28 UTC] ; pid=4938 ; code=exited ; status=1 }", "FailureAction": "none", "FileDescriptorStoreMax": "0", "FragmentPath": "/lib/systemd/system/jcagent.service", "Group": "root", "GuessMainPID": "yes", "IOScheduling": "0", "Id": "jcagent.service", "IgnoreOnIsolate": "no", "IgnoreSIGPIPE": "yes", "InactiveEnterTimestamp": "Sun 2018-05-13 19:48:29 UTC", "InactiveEnterTimestampMonotonic": "3323033911", "InactiveExitTimestamp": "Sun 2018-05-13 19:48:28 UTC", "InactiveExitTimestampMonotonic": "3322790193", "JobTimeoutAction": "none", "JobTimeoutUSec": "infinity", "KillMode": "process", "KillSignal": "15", "LimitAS": "18446744073709551615", "LimitASSoft": "18446744073709551615", "LimitCORE": "18446744073709551615", "LimitCORESoft": "0", "LimitCPU": "18446744073709551615", "LimitCPUSoft": "18446744073709551615", "LimitDATA": "18446744073709551615", "LimitDATASoft": "18446744073709551615", "LimitFSIZE": "18446744073709551615", "LimitFSIZESoft": "18446744073709551615", "LimitLOCKS": "18446744073709551615", "LimitLOCKSSoft": "18446744073709551615", "LimitMEMLOCK": "65536", "LimitMEMLOCKSoft": "65536", "LimitMSGQUEUE": "819200", "LimitMSGQUEUESoft": "819200", "LimitNICE": "0", "LimitNICESoft": "0", "LimitNOFILE": "4096", "LimitNOFILESoft": "1024", "LimitNPROC": "3900", "LimitNPROCSoft": "3900", "LimitRSS": "18446744073709551615", "LimitRSSSoft": "18446744073709551615", "LimitRTPRIO": "0", "LimitRTPRIOSoft": "0", "LimitRTTIME": "18446744073709551615", "LimitRTTIMESoft": "18446744073709551615", "LimitSIGPENDING": "3900", "LimitSIGPENDINGSoft": "3900", "LimitSTACK": "18446744073709551615", "LimitSTACKSoft": "8388608", "LoadState": "loaded", "MainPID": "0", "MemoryAccounting": "no", "MemoryCurrent": "18446744073709551615", "MemoryLimit": "18446744073709551615", "MountFlags": "0", "NFileDescriptorStore": "0", "Names": "jcagent.service", "NeedDaemonReload": "no", "Nice": "0", "NoNewPrivileges": "no", "NonBlocking": "no", "NotifyAccess": "none", "OOMScoreAdjust": "0", "OnFailureJobMode": "replace", "PIDFile": "/opt/jc/jcagent.pid", "PermissionsStartOnly": "no", "PrivateDevices": "no", "PrivateNetwork": "no", "PrivateTmp": "no", "ProtectHome": "no", "ProtectSystem": "no", "RefuseManualStart": "no", "RefuseManualStop": "no", "RemainAfterExit": "no", "Requires": "sysinit.target system.slice", "Restart": "always", "RestartUSec": "100ms", "Result": "exit-code", "RootDirectoryStartOnly": "no", "RuntimeDirectoryMode": "0755", "RuntimeMaxUSec": "infinity", "SameProcessGroup": "no", "SecureBits": "0", "SendSIGHUP": "no", "SendSIGKILL": "yes", "Slice": "system.slice", "StandardError": "inherit", "StandardInput": "null", "StandardOutput": "journal", "StartLimitAction": "none", "StartLimitBurst": "5", "StartLimitInterval": "10000000", "StartupBlockIOWeight": "18446744073709551615", "StartupCPUShares": "18446744073709551615", "StateChangeTimestamp": "Sun 2018-05-13 19:48:29 UTC", "StateChangeTimestampMonotonic": "3323033911", "StatusErrno": "0", "StopWhenUnneeded": "no", "SubState": "dead", "SyslogFacility": "3", "SyslogLevel": "6", "SyslogLevelPrefix": "yes", "SyslogPriority": "30", "SystemCallErrorNumber": "0", "TTYReset": "no", "TTYVHangup": "no", "TTYVTDisallocate": "no", "TasksAccounting": "no", "TasksCurrent": "18446744073709551615", "TasksMax": "18446744073709551615", "TimeoutStartUSec": "1min 30s", "TimeoutStopUSec": "1min 30s", "TimerSlackNSec": "50000", "Transient": "no", "Type": "simple", "UMask": "0022", "UnitFilePreset": "enabled", "UnitFileState": "enabled", "User": "root", "UtmpMode": "init", "WantedBy": "multi-user.target", "Wants": "time-sync.target", "WatchdogTimestampMonotonic": "0", "WatchdogUSec": "0"}}
+2018-05-14 03:50:03,354 p=9251 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 03:50:03,355 p=9251 u=gmonkey |  18.196.50.237              : ok=4    changed=1    unreachable=0    failed=0   
+2018-05-14 04:08:22,859 p=9408 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 04:08:22,949 p=9408 u=gmonkey |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml': line 11, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name:       Install JumpCloud if required
+  ^ here
+
+
+The error appears to have been in '/home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml': line 11, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name:       Install JumpCloud if required
+  ^ here
+
+2018-05-14 04:09:26,865 p=9428 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 04:09:26,953 p=9428 u=gmonkey |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml': line 11, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name:       Install JumpCloud if required
+  ^ here
+
+
+The error appears to have been in '/home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml': line 11, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name:       Install JumpCloud if required
+  ^ here
+
+2018-05-14 04:10:30,611 p=9444 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 04:10:30,701 p=9444 u=gmonkey |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml': line 11, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Install JumpCloud if required
+  ^ here
+
+
+The error appears to have been in '/home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml': line 11, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Install JumpCloud if required
+  ^ here
+
+2018-05-14 04:11:04,712 p=9455 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 04:11:04,796 p=9455 u=gmonkey |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml': line 11, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Install JumpCloud if required
+  ^ here
+
+
+The error appears to have been in '/home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml': line 11, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Install JumpCloud if required
+  ^ here
+
+2018-05-14 04:12:25,189 p=9488 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 04:12:25,274 p=9488 u=gmonkey |  ERROR! no action detected in task. This often indicates a misspelled module name, or incorrect module path.
+
+The error appears to have been in '/home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml': line 11, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Install JumpCloud if required
+  ^ here
+
+
+The error appears to have been in '/home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/ansible-jumpcloud/tasks/main.yml': line 11, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Install JumpCloud if required
+  ^ here
+
+2018-05-14 04:47:04,801 p=10041 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 04:47:04,889 p=10041 u=gmonkey |  statically included: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/shrikeh.jumpcloud/tasks/install.yml
+2018-05-14 04:47:04,911 p=10041 u=gmonkey |  PLAYBOOK: jumpcloud.yml ********************************************************
+2018-05-14 04:47:04,912 p=10041 u=gmonkey |  1 plays in jumpcloud.yml
+2018-05-14 04:47:04,915 p=10041 u=gmonkey |  PLAY [jumpcloud-clients] *******************************************************
+2018-05-14 04:47:04,940 p=10041 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 04:47:05,507 p=10041 u=gmonkey |  fatal: [18.197.84.34]: UNREACHABLE! => {"changed": false, "msg": "SSH Error: data could not be sent to the remote host. Make sure this host can be reached over ssh", "unreachable": true}
+2018-05-14 04:47:05,508 p=10041 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 04:47:05,508 p=10041 u=gmonkey |  18.197.84.34               : ok=0    changed=0    unreachable=1    failed=0   
+2018-05-14 04:47:25,899 p=10054 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 04:47:25,990 p=10054 u=gmonkey |  statically included: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/shrikeh.jumpcloud/tasks/install.yml
+2018-05-14 04:47:26,015 p=10054 u=gmonkey |  PLAYBOOK: jumpcloud.yml ********************************************************
+2018-05-14 04:47:26,016 p=10054 u=gmonkey |  1 plays in jumpcloud.yml
+2018-05-14 04:47:26,019 p=10054 u=gmonkey |  PLAY [jumpcloud-clients] *******************************************************
+2018-05-14 04:47:26,045 p=10054 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 04:47:27,800 p=10054 u=gmonkey |  ok: [18.197.84.34]
+2018-05-14 04:47:27,805 p=10054 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 04:47:27,805 p=10054 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/shrikeh.jumpcloud/tasks/main.yml:2
+2018-05-14 04:47:28,119 p=10054 u=gmonkey |  ok: [18.197.84.34] => {"changed": false, "stat": {"atime": 1526244138.4168923, "ctime": 1526244126.6109922, "dev": 51713, "executable": true, "exists": true, "gid": 0, "gr_name": "root", "inode": 148909, "isblk": false, "ischr": false, "isdir": true, "isfifo": false, "isgid": false, "islnk": false, "isreg": false, "issock": false, "isuid": false, "mode": "0700", "mtime": 1526244126.6109922, "nlink": 5, "path": "/opt/jc", "pw_name": "root", "readable": true, "rgrp": false, "roth": false, "rusr": true, "size": 4096, "uid": 0, "wgrp": false, "woth": false, "writeable": true, "wusr": true, "xgrp": false, "xoth": false, "xusr": true}}
+2018-05-14 04:47:28,122 p=10054 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 04:47:28,122 p=10054 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/shrikeh.jumpcloud/tasks/main.yml:7
+2018-05-14 04:47:28,153 p=10054 u=gmonkey |  ok: [18.197.84.34] => {"ansible_facts": {"jc_not_installed": false}, "changed": false}
+2018-05-14 04:47:28,156 p=10054 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 04:47:28,157 p=10054 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/shrikeh.jumpcloud/tasks/install.yml:2
+2018-05-14 04:47:28,180 p=10054 u=gmonkey |  skipping: [18.197.84.34] => {"changed": false, "skip_reason": "Conditional check failed", "skipped": true}
+2018-05-14 04:47:28,184 p=10054 u=gmonkey |  TASK [shrikeh.jumpcloud : Register the install script output as a variable] ****
+2018-05-14 04:47:28,185 p=10054 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/shrikeh.jumpcloud/tasks/install.yml:11
+2018-05-14 04:47:28,206 p=10054 u=gmonkey |  skipping: [18.197.84.34] => {"changed": false, "skip_reason": "Conditional check failed", "skipped": true}
+2018-05-14 04:47:28,212 p=10054 u=gmonkey |  TASK [shrikeh.jumpcloud : Ensure temp directory exists] ************************
+2018-05-14 04:47:28,213 p=10054 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/shrikeh.jumpcloud/tasks/install.yml:16
+2018-05-14 04:47:28,237 p=10054 u=gmonkey |  skipping: [18.197.84.34] => {"changed": false, "skip_reason": "Conditional check failed", "skipped": true}
+2018-05-14 04:47:28,240 p=10054 u=gmonkey |  TASK [shrikeh.jumpcloud : Copy the string into position] ***********************
+2018-05-14 04:47:28,240 p=10054 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/shrikeh.jumpcloud/tasks/install.yml:25
+2018-05-14 04:47:28,264 p=10054 u=gmonkey |  skipping: [18.197.84.34] => {"changed": false, "skip_reason": "Conditional check failed", "skipped": true}
+2018-05-14 04:47:28,267 p=10054 u=gmonkey |  TASK [shrikeh.jumpcloud : Execute this via the shell] **************************
+2018-05-14 04:47:28,267 p=10054 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/shrikeh.jumpcloud/tasks/install.yml:34
+2018-05-14 04:47:28,291 p=10054 u=gmonkey |  skipping: [18.197.84.34] => {"changed": false, "skip_reason": "Conditional check failed", "skipped": true}
+2018-05-14 04:47:28,294 p=10054 u=gmonkey |  TASK [shrikeh.jumpcloud : Ensure jcagent is enabled and started] ***************
+2018-05-14 04:47:28,294 p=10054 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/shrikeh.jumpcloud/tasks/main.yml:15
+2018-05-14 04:47:28,730 p=10054 u=gmonkey |  ok: [18.197.84.34] => {"changed": false, "enabled": true, "name": "jcagent", "state": "started"}
+2018-05-14 04:47:28,734 p=10054 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 04:47:28,734 p=10054 u=gmonkey |  18.197.84.34               : ok=4    changed=0    unreachable=0    failed=0   
+2018-05-14 04:47:40,490 p=10085 u=gmonkey |  Using /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/ansible.cfg as config file
+2018-05-14 04:47:40,576 p=10085 u=gmonkey |  statically included: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/shrikeh.jumpcloud/tasks/install.yml
+2018-05-14 04:47:40,598 p=10085 u=gmonkey |  PLAYBOOK: jumpcloud.yml ********************************************************
+2018-05-14 04:47:40,598 p=10085 u=gmonkey |  1 plays in jumpcloud.yml
+2018-05-14 04:47:40,601 p=10085 u=gmonkey |  PLAY [jumpcloud-clients] *******************************************************
+2018-05-14 04:47:40,625 p=10085 u=gmonkey |  TASK [setup] *******************************************************************
+2018-05-14 04:47:41,158 p=10085 u=gmonkey |  ok: [18.197.84.34]
+2018-05-14 04:47:41,161 p=10085 u=gmonkey |  TASK [shrikeh.jumpcloud : Check if JumpCloud folder exists] ********************
+2018-05-14 04:47:41,161 p=10085 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/shrikeh.jumpcloud/tasks/main.yml:2
+2018-05-14 04:47:41,482 p=10085 u=gmonkey |  ok: [18.197.84.34] => {"changed": false, "stat": {"atime": 1526244138.4168923, "ctime": 1526244126.6109922, "dev": 51713, "executable": true, "exists": true, "gid": 0, "gr_name": "root", "inode": 148909, "isblk": false, "ischr": false, "isdir": true, "isfifo": false, "isgid": false, "islnk": false, "isreg": false, "issock": false, "isuid": false, "mode": "0700", "mtime": 1526244126.6109922, "nlink": 5, "path": "/opt/jc", "pw_name": "root", "readable": true, "rgrp": false, "roth": false, "rusr": true, "size": 4096, "uid": 0, "wgrp": false, "woth": false, "writeable": true, "wusr": true, "xgrp": false, "xoth": false, "xusr": true}}
+2018-05-14 04:47:41,485 p=10085 u=gmonkey |  TASK [shrikeh.jumpcloud : Determine if JumpCloud is already installed] *********
+2018-05-14 04:47:41,486 p=10085 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/shrikeh.jumpcloud/tasks/main.yml:7
+2018-05-14 04:47:41,518 p=10085 u=gmonkey |  ok: [18.197.84.34] => {"ansible_facts": {"jc_not_installed": false}, "changed": false}
+2018-05-14 04:47:41,522 p=10085 u=gmonkey |  TASK [shrikeh.jumpcloud : Get the install script] ******************************
+2018-05-14 04:47:41,522 p=10085 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/shrikeh.jumpcloud/tasks/install.yml:2
+2018-05-14 04:47:41,546 p=10085 u=gmonkey |  skipping: [18.197.84.34] => {"changed": false, "skip_reason": "Conditional check failed", "skipped": true}
+2018-05-14 04:47:41,549 p=10085 u=gmonkey |  TASK [shrikeh.jumpcloud : Register the install script output as a variable] ****
+2018-05-14 04:47:41,549 p=10085 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/shrikeh.jumpcloud/tasks/install.yml:11
+2018-05-14 04:47:41,572 p=10085 u=gmonkey |  skipping: [18.197.84.34] => {"changed": false, "skip_reason": "Conditional check failed", "skipped": true}
+2018-05-14 04:47:41,577 p=10085 u=gmonkey |  TASK [shrikeh.jumpcloud : Ensure temp directory exists] ************************
+2018-05-14 04:47:41,577 p=10085 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/shrikeh.jumpcloud/tasks/install.yml:16
+2018-05-14 04:47:41,601 p=10085 u=gmonkey |  skipping: [18.197.84.34] => {"changed": false, "skip_reason": "Conditional check failed", "skipped": true}
+2018-05-14 04:47:41,605 p=10085 u=gmonkey |  TASK [shrikeh.jumpcloud : Copy the string into position] ***********************
+2018-05-14 04:47:41,605 p=10085 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/shrikeh.jumpcloud/tasks/install.yml:25
+2018-05-14 04:47:41,626 p=10085 u=gmonkey |  skipping: [18.197.84.34] => {"changed": false, "skip_reason": "Conditional check failed", "skipped": true}
+2018-05-14 04:47:41,628 p=10085 u=gmonkey |  TASK [shrikeh.jumpcloud : Execute this via the shell] **************************
+2018-05-14 04:47:41,629 p=10085 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/shrikeh.jumpcloud/tasks/install.yml:34
+2018-05-14 04:47:41,649 p=10085 u=gmonkey |  skipping: [18.197.84.34] => {"changed": false, "skip_reason": "Conditional check failed", "skipped": true}
+2018-05-14 04:47:41,652 p=10085 u=gmonkey |  TASK [shrikeh.jumpcloud : Ensure jcagent is enabled and started] ***************
+2018-05-14 04:47:41,652 p=10085 u=gmonkey |  task path: /home/gmonkey/coding-practice/IAC/Terraform/jumpcloud-ldap/ansible/roles/shrikeh.jumpcloud/tasks/main.yml:15
+2018-05-14 04:47:42,021 p=10085 u=gmonkey |  ok: [18.197.84.34] => {"changed": false, "enabled": true, "name": "jcagent", "state": "started"}
+2018-05-14 04:47:42,026 p=10085 u=gmonkey |  PLAY RECAP *********************************************************************
+2018-05-14 04:47:42,026 p=10085 u=gmonkey |  18.197.84.34               : ok=4    changed=0    unreachable=0    failed=0   

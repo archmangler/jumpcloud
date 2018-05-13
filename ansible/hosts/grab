@@ -1,0 +1,5 @@
+[grab]
+18.197.84.34
+
+[jumpcloud-clients:children]
+grab
