@@ -10,6 +10,8 @@ can be built in,
 In any case, this task is better done using a templating
 technology like Terraform or cloudformation 
 -- traiano@gmail.com
+
+NOTE: A bug in some versions of boto3 results in rule description being rejected ... working on that
 '''
 
 #Change these values to customise the rule to change/update
