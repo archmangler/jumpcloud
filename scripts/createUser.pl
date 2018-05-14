@@ -30,10 +30,11 @@ foreach my $line (@lines){
  $lastName=@user_lines[3];
  $sudoBool=@user_lines[4];
  $pubKey=@user_lines[5];
+ $pubKeyEnabled=@user_lines[6];
 
- print "debug) user name ($userName) email ($email) first name ($firstName) last name ($lastName) sudo ($sudoBool) public key ($pubKey)\n";
+ print "debug) user name ($userName) email ($email) first name ($firstName) last name ($lastName) sudo ($sudoBool) public key ($pubKey) pubkey enabled? ($pubKeyEnabled)\n";
 
- create_user($userName,$email,$firstName,$lastName,$sudoBool,$pubKey);
+ create_user($userName,$email,$firstName,$lastName,$sudoBool,$pubKey,$pubKeyEnabled);
 
 }
 
@@ -45,6 +46,7 @@ sub create_user{
 	my $lastName=shift;
 	my $sudoBool=shift;
 	my $pubKey=shift;
+	my $pubKeyEnabled=shift;
 
 	my $create_cmd="curl -X POST https://console.jumpcloud.com/api/systemusers -H 'Accept: application/json' -H 'Content-Type: application/json' -H 'x-api-key: $JUMPCLOUD_API_KEY' -d '{
 	\"username\":\"$userName\",
@@ -52,7 +54,8 @@ sub create_user{
 	\"firstname\":\"$firstName\",
 	\"lastname\":\"$lastName\",
 	\"sudo\":\"$sudoBool\",
-	\"public_key\":\"$pubKey\"
+	\"public_key\":\"$pubKey\",
+	\"allow_public_key\":\"$pubKeyEnabled\"
 }'";
 	#run the create command
 	run_command($create_cmd);
