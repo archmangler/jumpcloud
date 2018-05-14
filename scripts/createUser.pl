@@ -1,5 +1,6 @@
 #!/usr/bin/env perl
 #A little perl script to demonstrate user creation with the jumpcloud API
+#See the Jumpcloud api here for more features to add: https://github.com/TheJumpCloud/JumpCloudAPI#system-users
 
 #NOTE: Security risk: Don't do this in production, i.e don't keep the secret key
 #in the script!
