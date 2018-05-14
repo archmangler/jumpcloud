@@ -6,6 +6,7 @@ This directory contains a collection of Terraform, Ansible, python and perl code
 2. Ansible playbook to deploy jumpcloud client on Ubuntu 14.04 (Ubuntu 16.04 has a bug), ansible/jumpcloud.yml
 3. Python code to add rules to the VPC security group (addSGRule.py)
 4. PERL code to create jumpcloud users using the jumpcloud API (scripts/createUser.pl)
+5. Terraform script to create an IAM user restricted to using EC2 (iam-users/iam.tf)
 
 
 ## Usage
@@ -18,6 +19,8 @@ This directory contains a collection of Terraform, Ansible, python and perl code
 ansible-playbook --diff -vv -i hosts/grab jumpcloud.yml
 
 ```
+
+3. under iam-users/iam.tf customise the exaample-variables.tf and run terraform plan -out iam.plan and then terraform apply iam.plan
 
 (NOTE: make sure you have your ec2 ssh key correctly configures in terraform's variables.tf and for ansible)
 
