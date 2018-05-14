@@ -4,7 +4,7 @@
 
 #NOTE: Security risk: Don't do this in production, i.e don't keep the secret key
 #in the script!
-my $JUMPCLOUD_API_KEY="52caad26a039c8762b2590be5227da05922b1760";
+my $JUMPCLOUD_API_KEY="scramble";
 
 #Users file is a formatted document with the users details in it (csv format)
 my $users_file="users.csv";
