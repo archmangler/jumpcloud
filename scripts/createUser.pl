@@ -3,7 +3,7 @@
 
 #NOTE: Security risk: Don't do this in production, i.e don't keep the secret key
 #in the script!
-my $JUMPCLOUD_API_KEY="your-api-key";
+my $JUMPCLOUD_API_KEY="52caad26a039c8762b2590be5227da05922b1760";
 
 #Users file is a formatted document with the users details in it (csv format)
 my $users_file="users.csv";
@@ -28,10 +28,12 @@ foreach my $line (@lines){
  $email=@user_lines[1];
  $firstName=@user_lines[2];
  $lastName=@user_lines[3];
+ $sudoBool=@user_lines[4];
+ $pubKey=@user_lines[5];
 
- print "debug) user name ($userName) email ($email) first name ($firstName) last name ($lastName)\n";
+ print "debug) user name ($userName) email ($email) first name ($firstName) last name ($lastName) sudo ($sudoBool) public key ($pubKey)\n";
 
- create_user($userName,$email,$firstName,$lastName);
+ create_user($userName,$email,$firstName,$lastName,$sudoBool,$pubKey);
 
 }
 
@@ -41,12 +43,16 @@ sub create_user{
 	my $email=shift;
 	my $firstName=shift;
 	my $lastName=shift;
+	my $sudoBool=shift;
+	my $pubKey=shift;
 
 	my $create_cmd="curl -X POST https://console.jumpcloud.com/api/systemusers -H 'Accept: application/json' -H 'Content-Type: application/json' -H 'x-api-key: $JUMPCLOUD_API_KEY' -d '{
 	\"username\":\"$userName\",
 	\"email\":\"$email\",
 	\"firstname\":\"$firstName\",
-	\"lastname\":\"$lastName\"
+	\"lastname\":\"$lastName\",
+	\"sudo\":\"$sudoBool\",
+	\"public_key\":\"$pubKey\"
 }'";
 	#run the create command
 	run_command($create_cmd);
